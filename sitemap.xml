@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://crrsn.github.io/blog/about/</loc>
+    <lastmod>2022-05-10T15:56:42+08:00</lastmod>
+  </url><url>
     <loc>https://crrsn.github.io/blog/</loc>
     <lastmod>2022-05-10T14:07:03+08:00</lastmod>
   </url><url>
@@ -23,5 +26,9 @@
     <loc>https://crrsn.github.io/blog/categories/</loc>
   </url><url>
     <loc>https://crrsn.github.io/blog/tags/</loc>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/archives/</loc>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/search/</loc>
   </url>
 </urlset>
