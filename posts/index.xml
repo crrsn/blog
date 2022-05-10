@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on LEO&#39;s Blog</title>
+    <link>https://crrsn.github.io/posts/</link>
+    <description>Recent content in Posts on LEO&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>LEO</copyright>
+    <lastBuildDate>Tue, 10 May 2022 14:07:03 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Post</title>
+      <link>https://crrsn.github.io/posts/new-post/</link>
+      <pubDate>Tue, 10 May 2022 14:07:03 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/posts/new-post/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://crrsn.github.io/posts/my-first-post/</link>
+      <pubDate>Tue, 10 May 2022 10:36:18 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/posts/my-first-post/</guid>
+      <description>我的第一篇Blog 2022年5月10日 建立人生第一個Blog網頁
+環境：MAC OS 11.5.2
+使用工具介紹 HUGO網頁架構 參考這位作者的教學
+ [LINK] 
+選用hugo-theme-bootstrap風格
+需安裝
+hugo mod npm pack npm install hugo server MacDown網頁編輯工具  可用來編輯mackdown格式的文本。 [LINK] 
+常用指令 啟動 Hugo 伺服器，指令如下。 http://localhost:1313/ 
+hugo server -D 新增頁面
+hugo new posts/name-of-post/index.zh-tw.md or hugo new notes/name-of-note/index.zh-tw.md 用上面的方法會新增一個資料夾(name-of-post)就在***./content/posts裡 所有用到的圖片(ex: img.jpg)都可放在這裡面，要貼圖就下(img.jpg)***即可。
+##如何發布到Github上 在blog根目錄下執行
+hugo 進到./blog/public裡去更新git</description>
+    </item>
+    
+  </channel>
+</rss>

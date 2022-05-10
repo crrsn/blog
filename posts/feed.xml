@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on LEO人生</title>
+    <link>https://crrsn.github.io/blog/posts/</link>
+    <description>Recent content in Posts on LEO人生</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 10 May 2022 14:07:03 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Post</title>
+      <link>https://crrsn.github.io/blog/posts/new-post/</link>
+      <pubDate>Tue, 10 May 2022 14:07:03 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/new-post/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://crrsn.github.io/blog/posts/my-first-post/</link>
+      <pubDate>Tue, 10 May 2022 10:36:18 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/my-first-post/</guid>
+      <description>我的第一篇Blog 2022年5月10日 建立人生第一個Blog網頁 環境：MAC OS 11.5.2 使用工具介紹 HUGO網頁架構 參考這位作者的教學 [LINK] 選用hugo</description>
+    </item>
+    
+  </channel>
+</rss>
