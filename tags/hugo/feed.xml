@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on LEO&#39;s Blog</title>
+    <link>https://crrsn.github.io/blog/tags/hugo/</link>
+    <description>Recent content in Hugo on LEO&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 10 May 2022 10:36:18 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/hugo/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>建立人生第一個Blog網頁</title>
+      <link>https://crrsn.github.io/blog/posts/f001-firstblog/</link>
+      <pubDate>Tue, 10 May 2022 10:36:18 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f001-firstblog/</guid>
+      <description>我的第一篇Blog 2022年5月10日 建立人生第一個Blog網頁 環境: MAC OS 11.5.2 Path: .文件/website/blog 使用工具介紹 HUGO網頁架構 參</description>
+    </item>
+    
+  </channel>
+</rss>

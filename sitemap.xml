@@ -2,30 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://crrsn.github.io/blog/tags/atom/</loc>
+    <lastmod>2022-05-11T09:22:20+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/categories/</loc>
+    <lastmod>2022-05-11T09:22:20+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/</loc>
+    <lastmod>2022-05-11T09:22:20+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/tags/markdown/</loc>
+    <lastmod>2022-05-11T09:22:20+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/posts/</loc>
+    <lastmod>2022-05-11T09:22:20+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/tags/</loc>
+    <lastmod>2022-05-11T09:22:20+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/posts/f002-atom/</loc>
+    <lastmod>2022-05-11T09:22:20+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/</loc>
+    <lastmod>2022-05-11T09:22:20+08:00</lastmod>
+  </url><url>
     <loc>https://crrsn.github.io/blog/about/</loc>
     <lastmod>2022-05-10T15:56:42+08:00</lastmod>
   </url><url>
-    <loc>https://crrsn.github.io/blog/</loc>
-    <lastmod>2022-05-10T14:07:03+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/posts/new-post/</loc>
-    <lastmod>2022-05-10T14:07:03+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/posts/</loc>
-    <lastmod>2022-05-10T14:07:03+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/notes/my-first-note/</loc>
-    <lastmod>2022-05-10T14:02:12+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/notes/</loc>
-    <lastmod>2022-05-10T14:02:12+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/posts/my-first-post/</loc>
+    <loc>https://crrsn.github.io/blog/tags/blog/</loc>
     <lastmod>2022-05-10T10:36:18+08:00</lastmod>
   </url><url>
-    <loc>https://crrsn.github.io/blog/categories/</loc>
+    <loc>https://crrsn.github.io/blog/tags/hugo/</loc>
+    <lastmod>2022-05-10T10:36:18+08:00</lastmod>
   </url><url>
-    <loc>https://crrsn.github.io/blog/tags/</loc>
+    <loc>https://crrsn.github.io/blog/posts/f001-firstblog/</loc>
+    <lastmod>2022-05-10T10:36:18+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2022-05-10T10:36:18+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/</loc>
+    <lastmod>2022-05-10T10:36:18+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/archives/</loc>
   </url><url>

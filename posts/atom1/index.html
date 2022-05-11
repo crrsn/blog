@@ -1,0 +1,495 @@
+<!doctype html><html class="position-relative" itemscope itemtype="http://schema.org/WebPage" lang="en"
+  
+   data-palette="blue"
+  >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>讓Atom編輯Markdown文件更好用 - LEO&#39;s Blog</title><link rel="apple-touch-icon" href="https://crrsn.github.io/blog/images/icons/icon-180x180.png" sizes="180x180">
+<link rel="icon" href="https://crrsn.github.io/blog/images/icons/icon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://crrsn.github.io/blog/images/icons/icon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://crrsn.github.io/blog/images/icons/favicon.ico">
+<link rel="manifest" href="https://crrsn.github.io/blog/manifest.json">
+<meta name="keywords" content="" />
+<meta name="description" content="文章目錄 文章目錄 測試平台 Atom介紹 什麼是Markdown (md檔案格式) 準備工作 常用外掛 安裝外掛 外掛介紹 markdown-toc markdown-preview-enhanced insert-timestamp language-markdown markdown-img-paste markdown-table-editor markdown-to" /><meta itemprop="name" content="讓Atom編輯Markdown文件更好用">
+<meta itemprop="description" content="文章目錄 文章目錄 測試平台 Atom介紹 什麼是Markdown (md檔案格式) 準備工作 常用外掛 安裝外掛 外掛介紹 markdown-toc markdown-preview-enhanced insert-timestamp language-markdown markdown-img-paste markdown-table-editor markdown-to"><meta itemprop="datePublished" content="2022-05-11T09:22:20+08:00" />
+<meta itemprop="dateModified" content="2022-05-11T09:22:20+08:00" />
+<meta itemprop="wordCount" content="1602">
+<meta itemprop="keywords" content="Markdown,Atom," /><meta property="og:title" content="讓Atom編輯Markdown文件更好用" />
+<meta property="og:description" content="文章目錄 文章目錄 測試平台 Atom介紹 什麼是Markdown (md檔案格式) 準備工作 常用外掛 安裝外掛 外掛介紹 markdown-toc markdown-preview-enhanced insert-timestamp language-markdown markdown-img-paste markdown-table-editor markdown-to" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://crrsn.github.io/blog/posts/atom1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-11T09:22:20+08:00" />
+<meta property="article:modified_time" content="2022-05-11T09:22:20+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="讓Atom編輯Markdown文件更好用"/>
+<meta name="twitter:description" content="文章目錄 文章目錄 測試平台 Atom介紹 什麼是Markdown (md檔案格式) 準備工作 常用外掛 安裝外掛 外掛介紹 markdown-toc markdown-preview-enhanced insert-timestamp language-markdown markdown-img-paste markdown-table-editor markdown-to"/>
+<meta property="og:image" content="https://crrsn.github.io/blog/false"/>
+  <meta name="twitter:image" content="https://crrsn.github.io/blog/false"/><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/main/bundle.min.5159448f81bf1efea8cccb9b715334a0d1e8901160a71d0cecef705a6b24d760.css" integrity="sha256-UVlEj4G/Hv6ozMubcVM0oNHokBFgpx0M7O9wWmsk12A=" crossorigin="anonymous"><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/viewer/bundle.min.05d84cef8ecf0f936293c62c90ebe16275bf8f5f5649297e1a4338e63676ba2b.css" integrity="sha256-BdhM747PD5Nik8YskOvhYnW/j19WSSl&#43;GkM45jZ2uis=" crossorigin="anonymous"></head>
+  <body><script>const items=["mode","palette"];items.forEach(function(e){const t=localStorage.getItem("hbs-"+e);t&&document.body.parentElement.setAttribute("data-"+e,t)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="https://crrsn.github.io/blog">LEO&#39;s Blog
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=%e8%ae%93Atom%e7%b7%a8%e8%bc%afMarkdown%e6%96%87%e4%bb%b6%e6%9b%b4%e5%a5%bd%e7%94%a8&url=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2fatom1%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2fatom1%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Settings</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+
+<div class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> Mode</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> Palette</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <a id="btnPalette" class="btn btn-sm btn-outline-primary" role="button" aria-label="palettePicker">
+        <i class="fas fa-eye-dropper"></i>
+      </a>
+    </div>
+  </form>
+  <div class="mt-2 d-flex justify-content-between visually-hidden" id="palettePicker"><button type="button" id="palette-blue" aria-label="Blue"
+        class="btn btn-sm w-100 palette" data-palette="blue">
+      </button><button type="button" id="palette-blue-gray" aria-label="Blue Gray"
+        class="btn btn-sm w-100 palette" data-palette="blue-gray">
+      </button><button type="button" id="palette-brown" aria-label="Brown"
+        class="btn btn-sm w-100 palette" data-palette="brown">
+      </button><button type="button" id="palette-cyan" aria-label="Cyan"
+        class="btn btn-sm w-100 palette" data-palette="cyan">
+      </button><button type="button" id="palette-green" aria-label="Green"
+        class="btn btn-sm w-100 palette" data-palette="green">
+      </button><button type="button" id="palette-indigo" aria-label="Indigo"
+        class="btn btn-sm w-100 palette" data-palette="indigo">
+      </button><button type="button" id="palette-orange" aria-label="Orange"
+        class="btn btn-sm w-100 palette" data-palette="orange">
+      </button><button type="button" id="palette-pink" aria-label="Pink"
+        class="btn btn-sm w-100 palette" data-palette="pink">
+      </button><button type="button" id="palette-purple" aria-label="Purple"
+        class="btn btn-sm w-100 palette" data-palette="purple">
+      </button><button type="button" id="palette-red" aria-label="Red"
+        class="btn btn-sm w-100 palette" data-palette="red">
+      </button><button type="button" id="palette-teal" aria-label="Teal"
+        class="btn btn-sm w-100 palette" data-palette="teal">
+      </button><button type="button" id="palette-yellow" aria-label="Yellow"
+        class="btn btn-sm w-100 palette" data-palette="yellow">
+      </button></div>
+</div>
+<div class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-go-back" href="javascript: window.history.back();">
+    <span class="action-icon"><i class="fas fa-2x fa-chevron-circle-down" data-fa-transform="rotate-90"></i></span> Go back
+  </a>
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> Reload
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> Copy URL
+  </a><a class="action action-social-share" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> Share
+  </a></div>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
+      <form class="search-bar my-1" action="https://crrsn.github.io/blog/search">
+  <div class="input-group input-group-sm">
+    <span class="btn btn-search disabled position-absolute left-0"><i class="fas fa-fw fa-search"></i></span>
+    <input class="form-control rounded-pill" name="q" type="search" aria-label="Search">
+  </div>
+</form>
+      <ul class="navbar-nav ms-auto"><li class="nav-item">
+          <a class="nav-link" href="https://crrsn.github.io/blog/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>所有文章
+          </a>
+        </li></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/">Home</a></li><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/posts/">Posts</a></li><li class="breadcrumb-item active">讓Atom編輯Markdown文件更好用</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper position-sticky">
+  <div class="d-flex flex-column component rounded post-panel position-absolute">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+
+    
+    
+    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title">讓Atom編輯Markdown文件更好用
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="created on 2022-05-11 09:22:20 &#43;0800 CST.">
+    2022年05月11日
+  </span><span class="post-taxonomies"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge post-taxonomy">軟體</a><a href="https://crrsn.github.io/blog/tags/atom/" class="badge post-taxonomy">Atom</a><a href="https://crrsn.github.io/blog/tags/markdown/" class="badge post-taxonomy">Markdown</a></span>
+</div>
+<div class="post-content mb-3"><h1 id="文章目錄">文章目錄<a class="anchor ms-1" href="#文章目錄"><i class="fas fa-link"></i></a></h1>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#%e6%96%87%e7%ab%a0%e7%9b%ae%e9%8c%84">文章目錄
+</a>
+<ul>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#%e6%b8%ac%e8%a9%a6%e5%b9%b3%e5%8f%b0">測試平台
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#atom%e4%bb%8b%e7%b4%b9">Atom介紹
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#%e4%bb%80%e9%ba%bc%e6%98%afmarkdown-md%e6%aa%94%e6%a1%88%e6%a0%bc%e5%bc%8f">什麼是Markdown (md檔案格式)
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#%e6%ba%96%e5%82%99%e5%b7%a5%e4%bd%9c">準備工作
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#%e5%b8%b8%e7%94%a8%e5%a4%96%e6%8e%9b">常用外掛
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#%e5%ae%89%e8%a3%9d%e5%a4%96%e6%8e%9b">安裝外掛
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#%e5%a4%96%e6%8e%9b%e4%bb%8b%e7%b4%b9">外掛介紹
+</a>
+<ul>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#markdown-toc">markdown-toc
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#markdown-preview-enhanced">markdown-preview-enhanced
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#insert-timestamp">insert-timestamp
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#language-markdown">language-markdown
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#markdown-img-paste">markdown-img-paste
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#markdown-table-editor">markdown-table-editor
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#markdown-to-pdf%e8%88%87pdf-view">markdown-to-pdf與pdf-view
+</a></li>
+</ul>
+</li>
+<li><a href="https://crrsn.github.io/blog/posts/atom1/#%e5%8f%83%e8%80%83%e8%b3%87%e6%96%99">參考資料
+</a></li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="測試平台">測試平台<a class="anchor ms-1" href="#測試平台"><i class="fas fa-link"></i></a></h2>
+<p><code>Windows 10</code> &amp; <code>MAC OS 11.5.2</code></p>
+<h2 id="atom介紹">Atom介紹<a class="anchor ms-1" href="#atom介紹"><i class="fas fa-link"></i></a></h2>
+<p>Atom 是 Github 專門為程式設計師推出的<code>跨平臺文字編輯器</code>，可支援Windows/Mac/Linux等常用作業系統。</p>
+<h2 id="什麼是markdown-md檔案格式">什麼是Markdown (md檔案格式)<a class="anchor ms-1" href="#什麼是markdown-md檔案格式"><i class="fas fa-link"></i></a></h2>
+<p>Markdown是一種使用普通文字編輯器編寫的<code>標記語言</code>，通過簡單語法可以使普通文字內容具有一定的格式，但無法任意使用其他字型或文字變色。Github上的Readme.md就是用Markdown語法寫成的。</p>
+<h2 id="準備工作">準備工作<a class="anchor ms-1" href="#準備工作"><i class="fas fa-link"></i></a></h2>
+<blockquote>
+<ul>
+<li>安裝Atom軟體 (<a href="https://atom.io/" target="_blank" rel="noopener noreferrer"><em>軟體下載</em><i class="fas fa-external-link-square-alt ms-1"></i>
+</a>)</li>
+<li>設定Atom主題 Windows: <em>(file-&gt;settings-&gt;Themes可以設定主題)</em>
+/ MAC: <em>(Preferences-&gt;Themes可以設定主題)</em></li>
+<li>安裝常用外掛(packages)</li>
+</ul>
+</blockquote>
+<h2 id="常用外掛">常用外掛<a class="anchor ms-1" href="#常用外掛"><i class="fas fa-link"></i></a></h2>
+<blockquote>
+<ul>
+<li>markdown-toc(主要用來快速生成markdown目錄)</li>
+<li>markdown-preview-enhanced(含同步滾動預覽，Latex公式預覽)</li>
+<li>language-markdown(程式碼增強)</li>
+<li>markdown-img-paste(剪貼簿圖片快速貼上到md檔案)</li>
+<li>insert-timestamp(md檔案中快速插入當前時間,寫部落格或日誌常用)</li>
+<li>markdown-table-editor(md檔案快速生成表格)</li>
+<li>markdown-to-pdf (pdf生成匯出)</li>
+<li>pdf-view(pdf預覽)</li>
+</ul>
+</blockquote>
+<h2 id="安裝外掛">安裝外掛<a class="anchor ms-1" href="#安裝外掛"><i class="fas fa-link"></i></a></h2>
+<p>開啟<code>Termal</code>執行：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">//安裝完Atom程式後，就可以使用apm指令
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">apm</span> <span class="n">install</span> <span class="n">markdown</span><span class="o">-</span><span class="n">toc</span>
+</span></span><span class="line"><span class="cl"><span class="n">apm</span> <span class="n">install</span> <span class="n">markdown</span><span class="o">-</span><span class="n">preview</span><span class="o">-</span><span class="n">enhanced</span>
+</span></span><span class="line"><span class="cl"><span class="n">apm</span> <span class="n">install</span> <span class="n">language</span><span class="o">-</span><span class="n">markdown</span>
+</span></span><span class="line"><span class="cl"><span class="n">apm</span> <span class="n">install</span> <span class="n">markdown</span><span class="o">-</span><span class="n">img</span><span class="o">-</span><span class="n">paste</span>
+</span></span><span class="line"><span class="cl"><span class="n">apm</span> <span class="n">install</span> <span class="n">insert</span><span class="o">-</span><span class="n">timestamp</span>
+</span></span><span class="line"><span class="cl"><span class="n">apm</span> <span class="n">install</span> <span class="n">markdown</span><span class="o">-</span><span class="n">table</span><span class="o">-</span><span class="n">editor</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//亦可以一次安裝多個外掛
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">apm</span> <span class="n">install</span> <span class="n">markdown</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">pdf</span> <span class="n">pdf</span><span class="o">-</span><span class="n">view</span>
+</span></span></code></pre></div><h2 id="外掛介紹">外掛介紹<a class="anchor ms-1" href="#外掛介紹"><i class="fas fa-link"></i></a></h2>
+<blockquote>
+<p>注意：如某外掛無法使用時，請到Atom的Settings(Mac是Preference)中的Install裡，利用search功能找到對應的外掛，將其Disable再Enable即可正常使用。</p>
+</blockquote>
+<p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/atom1/assets/markdown-img-paste-2022051023120459.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+</p>
+<h3 id="markdown-toc">markdown-toc<a class="anchor ms-1" href="#markdown-toc"><i class="fas fa-link"></i></a></h3>
+<p>主要使用它來快速生成目錄。使用<!-- raw HTML omitted -->ctrl+alt+c<!-- raw HTML omitted -->就可以生成目錄，使用<!-- raw HTML omitted -->ctrl+alt+u<!-- raw HTML omitted -->可以更新目錄。</p>
+<blockquote>
+<p>下圖就是使用mardown-toc自動產生的目錄結構。注意：一定要有第一層「#」，才能正常顯示。</p>
+</blockquote>
+<p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/atom1/assets/markdown-img-paste-20220511091609824.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+</p>
+<h3 id="markdown-preview-enhanced">markdown-preview-enhanced<a class="anchor ms-1" href="#markdown-preview-enhanced"><i class="fas fa-link"></i></a></h3>
+<p>同步滾動預覽功能(支援預覽Latex公式)。使用方法是用Atom開啟一個*.md的檔案後，按<!-- raw HTML omitted -->ctrl+shift+m<!-- raw HTML omitted -->即可在右側開啟同步的滾動預覽頁面。</p>
+<h3 id="insert-timestamp">insert-timestamp<a class="anchor ms-1" href="#insert-timestamp"><i class="fas fa-link"></i></a></h3>
+<p>該外掛可以md檔案中快速插入當前時間，寫部落格或日誌時常用。安裝好後，enable外掛。使用<!-- raw HTML omitted -->ctrl+shift+alt+t<!-- raw HTML omitted -->就可以外掛當前時間。</p>
+<p>MAC的alt是option，按法如下圖</p>
+<p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/atom1/assets/markdown-img-paste-20220511085612268.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+</p>
+<h3 id="language-markdown">language-markdown<a class="anchor ms-1" href="#language-markdown"><i class="fas fa-link"></i></a></h3>
+<p>程式碼著色增強外掛。除了能給程式碼著色，還提供了快捷的程式碼片段生成等功能。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MyClass</span> <span class="p">{</span>       <span class="c1">// The class
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">public</span><span class="o">:</span>             <span class="c1">// Access specifier
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">myNum</span><span class="p">;</span>        <span class="c1">// Attribute (int variable)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">string</span> <span class="n">myString</span><span class="p">;</span>  <span class="c1">// Attribute (string variable)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">MyClass</span> <span class="n">myObj</span><span class="p">;</span>  <span class="c1">// Create an object of MyClass
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Access attributes and set values
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">myObj</span><span class="p">.</span><span class="n">myNum</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">myObj</span><span class="p">.</span><span class="n">myString</span> <span class="o">=</span> <span class="s">&#34;Some text&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Print attribute values
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">myObj</span><span class="p">.</span><span class="n">myNum</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">myObj</span><span class="p">.</span><span class="n">myString</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="markdown-img-paste">markdown-img-paste<a class="anchor ms-1" href="#markdown-img-paste"><i class="fas fa-link"></i></a></h3>
+<p>安裝這個外掛後，我們可以將用任意的截圖軟體截圖後(只要截圖儲存在剪貼簿中)，使用<!-- raw HTML omitted -->ctrl+shift+v<!-- raw HTML omitted -->就可將圖片貼上到.md檔案中，並生成一個空白的title讓你填寫，在預覽中顯示出圖片。這個圖片會預設儲存在.md檔案同目錄下的assets資料夾中。</p>
+<p><picture><img class="img-fluid" alt="我擷的圖" src="https://crrsn.github.io/blog/posts/atom1/assets/markdown-img-paste-20220510225338189.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+</p>
+<p>在assets中自動產生</p>
+<p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/atom1/assets/markdown-img-paste-20220510225450213.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+</p>
+<h3 id="markdown-table-editor">markdown-table-editor<a class="anchor ms-1" href="#markdown-table-editor"><i class="fas fa-link"></i></a></h3>
+<p>使用時在行首輸入<!-- raw HTML omitted -->|<!-- raw HTML omitted -->，然後按<!-- raw HTML omitted -->Tab<!-- raw HTML omitted -->，寫入這個單元格的內容，寫完了一個單元格再按<!-- raw HTML omitted -->Tab<!-- raw HTML omitted -->。即建立了一個單元格。寫完表格一行在最後面按<!-- raw HTML omitted -->enter<!-- raw HTML omitted -->會自動生成下一行同樣列數的單元格。</p>
+<p>格式：</p>
+<p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/atom1/assets/markdown-img-paste-20220510231407983.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+</p>
+<p>結果：</p>
+<table>
+<thead>
+<tr>
+<th>外掛名稱</th>
+<th>功能說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>markdown-toc</td>
+<td>快速生成markdown目錄</td>
+</tr>
+<tr>
+<td>markdown-preview-enhanced</td>
+<td>同步滾動預覽</td>
+</tr>
+<tr>
+<td>language-markdown</td>
+<td>程式碼增強</td>
+</tr>
+<tr>
+<td>markdown-img-paste</td>
+<td>剪貼簿圖片快速貼上到md檔案</td>
+</tr>
+</tbody>
+</table>
+<h3 id="markdown-to-pdf與pdf-view">markdown-to-pdf與pdf-view<a class="anchor ms-1" href="#markdown-to-pdf與pdf-view"><i class="fas fa-link"></i></a></h3>
+<p>將md檔案快速儲存為pdf的外掛與pdf預覽外掛。</p>
+<p>按<!-- raw HTML omitted -->ctrl+s<!-- raw HTML omitted -->先儲存檔案，然後在編輯區點選<code>右鍵-&gt;Convert to PDF</code>或者使用快捷鍵<!-- raw HTML omitted -->ctrl+alt+e<!-- raw HTML omitted -->可以匯出PDF並預覽，匯出的pdf預設與.md在同一資料夾內。</p>
+<h2 id="參考資料">參考資料<a class="anchor ms-1" href="#參考資料"><i class="fas fa-link"></i></a></h2>
+<ul>
+<li><a href="https://www.796t.com/content/1545653941.html" target="_blank" rel="noopener noreferrer">程式人生<i class="fas fa-external-link-square-alt ms-1"></i>
+</a></li>
+<li><a href="https://dotblogs.com.tw/yitingblog/2018/08/07/144059" target="_blank" rel="noopener noreferrer">YiTing隨筆記<i class="fas fa-external-link-square-alt ms-1"></i>
+</a></li>
+</ul>
+</div></div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-prev">
+    <i class="fas fa-fw fa-chevron-circle-down post-prev-icon" data-fa-transform="rotate-90"></i>
+    <a href="https://crrsn.github.io/blog/posts/new-post/">建立人生第一個Blog網頁
+</a>
+  </div></div></div>
+</article></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    <div class="profile profile-compact card row component">
+  <div class="col-lg-5 d-flex align-items-center justify-content-center"><picture><img class="profile-avatar rounded-circle" alt="LEO" src="https://crrsn.github.io/blog/images/profile.webp" loading="lazy" data-viewer-invisible
+    
+     width="108" height="108"
+     />
+</picture>
+</div>
+  <div class="col-lg-7 profile-meta"><div class="profile-name">LEO</div><div class="profile-bio">分享快樂</div><div class="profile-company"><i class="fas fa-fw fa-building"></i>HOME</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Earth</div><div class="profile-about"><i class="fas fa-fw fa-user"></i><a href="https://crrsn.github.io/blog/about/">關於我</a></div></div>
+</div>
+<div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">Contents</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#測試平台">測試平台</a></li>
+    <li><a href="#atom介紹">Atom介紹</a></li>
+    <li><a href="#什麼是markdown-md檔案格式">什麼是Markdown (md檔案格式)</a></li>
+    <li><a href="#準備工作">準備工作</a></li>
+    <li><a href="#常用外掛">常用外掛</a></li>
+    <li><a href="#安裝外掛">安裝外掛</a></li>
+    <li><a href="#外掛介紹">外掛介紹</a>
+      <ul>
+        <li><a href="#markdown-toc">markdown-toc</a></li>
+        <li><a href="#markdown-preview-enhanced">markdown-preview-enhanced</a></li>
+        <li><a href="#insert-timestamp">insert-timestamp</a></li>
+        <li><a href="#language-markdown">language-markdown</a></li>
+        <li><a href="#markdown-img-paste">markdown-img-paste</a></li>
+        <li><a href="#markdown-table-editor">markdown-table-editor</a></li>
+        <li><a href="#markdown-to-pdf與pdf-view">markdown-to-pdf與pdf-view</a></li>
+      </ul>
+    </li>
+    <li><a href="#參考資料">參考資料</a></li>
+  </ul>
+</nav>
+  </div>
+</div><section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">Recent Posts</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="https://crrsn.github.io/blog/posts/atom1/">讓Atom編輯Markdown文件更好用
+</a>
+      </li><li>
+        <a href="https://crrsn.github.io/blog/posts/new-post/">建立人生第一個Blog網頁
+</a>
+      </li></ul>
+  </div>
+</section><section class="categories-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="https://crrsn.github.io/blog/categories">Categories</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="https://crrsn.github.io/blog/categories/%E7%94%9F%E6%B4%BB/" class="badge rounded post-taxonomy" title="生活">
+            生活</a><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge rounded post-taxonomy" title="軟體">
+            軟體</a></div>
+      </div>
+    </section><section class="tags-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="https://crrsn.github.io/blog/tags">Tags</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="https://crrsn.github.io/blog/tags/atom/" class="badge rounded post-taxonomy" title="Atom">
+            Atom</a><a href="https://crrsn.github.io/blog/tags/blog/" class="badge rounded post-taxonomy" title="Blog">
+            Blog</a><a href="https://crrsn.github.io/blog/tags/hugo/" class="badge rounded post-taxonomy" title="Hugo">
+            Hugo</a><a href="https://crrsn.github.io/blog/tags/markdown/" class="badge rounded post-taxonomy" title="Markdown">
+            Markdown</a><a href="https://crrsn.github.io/blog/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/" class="badge rounded post-taxonomy" title="第一次">
+            第一次</a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav justify-content-center mb-2"><a class="nav-link social-link" target="_blank" href="https://crrsn.github.io/blog/feed.xml" title="RSS" rel="noopener noreferrer">
+    <i class="fas fa-fw fa-2x fa-rss"></i>
+  </a></nav>
+<div class="copyright mb-2">
+  
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">Bootstrap</a> theme.
+</div></footer>
+<script src="https://crrsn.github.io/blog/assets/main/bundle.min.64c62e8b8c223fe1a22e857789e0d264bc9c3ba957c65a4b7f411ff3e22f8df7.js" integrity="sha256-ZMYui4wiP&#43;GiLoV3ieDSZLycO6lXxlpLf0Ef8&#43;Ivjfc=" crossorigin="anonymous" defer></script><script src="https://crrsn.github.io/blog/assets/icons/bundle.min.756b08fe873f898b176c275047c84b1ca09f120ede9df62993f55bd1442b4bd0.js" integrity="sha256-dWsI/oc/iYsXbCdQR8hLHKCfEg7enfYpk/Vb0UQrS9A=" crossorigin="anonymous" defer></script>
+<script src="https://crrsn.github.io/blog/assets/viewer/bundle.min.8a04279f4c01c6129efc48d87356904980c31656ec5a60da26fb51a1d784e1e2.js" integrity="sha256-igQnn0wBxhKe/EjYc1aQSYDDFlbsWmDaJvtRodeE4eI=" crossorigin="anonymous" defer></script>
+</body>
+</html>

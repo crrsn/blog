@@ -6,42 +6,31 @@
     <description>Recent content on LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 10 May 2022 14:07:03 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 May 2022 09:22:20 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>讓Atom編輯Markdown文件更好用</title>
+      <link>https://crrsn.github.io/blog/posts/f002-atom/</link>
+      <pubDate>Wed, 11 May 2022 09:22:20 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f002-atom/</guid>
+      <description>文章目錄 文章目錄 測試平台 Atom介紹 什麼是Markdown (md檔案格式) 準備工作 常用外掛 安裝外掛 外掛介紹 markdown-toc markdown-preview-enhanced insert-timestamp language-markdown markdown-img-paste markdown-table-editor markdown-to</description>
+    </item>
+    
     <item>
       <title>關於我</title>
       <link>https://crrsn.github.io/blog/about/</link>
       <pubDate>Tue, 10 May 2022 15:56:42 +0800</pubDate>
       
       <guid>https://crrsn.github.io/blog/about/</guid>
-      <description>HELLO WORLD</description>
+      <description>大家好，歡迎來到LEO&amp;rsquo;s Blog網站。 這邊會簡單分享一些實用的電腦/生活/維修/電玩。 歡迎大家來交流。 ~ 分享使人快樂 ~</description>
     </item>
     
     <item>
-      <title>New Post</title>
-      <link>https://crrsn.github.io/blog/posts/new-post/</link>
-      <pubDate>Tue, 10 May 2022 14:07:03 +0800</pubDate>
-      
-      <guid>https://crrsn.github.io/blog/posts/new-post/</guid>
-      <description> </description>
-    </item>
-    
-    <item>
-      <title>My First Note</title>
-      <link>https://crrsn.github.io/blog/notes/my-first-note/</link>
-      <pubDate>Tue, 10 May 2022 14:02:12 +0800</pubDate>
-      
-      <guid>https://crrsn.github.io/blog/notes/my-first-note/</guid>
-      <description>&lt;p&gt;{{ define &amp;ldquo;content&amp;rdquo; }}
-{{- partial &amp;ldquo;docs/catalog&amp;rdquo; . -}}&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://crrsn.github.io/blog/posts/my-first-post/</link>
+      <title>建立人生第一個Blog網頁</title>
+      <link>https://crrsn.github.io/blog/posts/f001-firstblog/</link>
       <pubDate>Tue, 10 May 2022 10:36:18 +0800</pubDate>
       
-      <guid>https://crrsn.github.io/blog/posts/my-first-post/</guid>
+      <guid>https://crrsn.github.io/blog/posts/f001-firstblog/</guid>
       <description>我的第一篇Blog 2022年5月10日 建立人生第一個Blog網頁 環境: MAC OS 11.5.2 Path: .文件/website/blog 使用工具介紹 HUGO網頁架構 參</description>
     </item>
     
