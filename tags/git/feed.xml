@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 11 May 2022 11:22:35 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/git/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git如何忽略.DS_Store等排除檔案</title>
-      <link>https://crrsn.github.io/blog/posts/p003-git-ignore/</link>
+      <link>https://crrsn.github.io/blog/posts/f003-git-ignore/</link>
       <pubDate>Wed, 11 May 2022 11:22:35 +0800</pubDate>
       
-      <guid>https://crrsn.github.io/blog/posts/p003-git-ignore/</guid>
+      <guid>https://crrsn.github.io/blog/posts/f003-git-ignore/</guid>
       <description>排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作</description>
     </item>
     

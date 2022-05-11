@@ -6,13 +6,49 @@
     <description>Recent content on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 11 May 2022 11:22:35 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 May 2022 14:37:25 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PSP 金手指 CMF</title>
+      <link>https://crrsn.github.io/blog/posts/f007-psp-cheat/</link>
+      <pubDate>Wed, 11 May 2022 14:37:25 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f007-psp-cheat/</guid>
+      <description>安裝 CheatMaster Fusion (CMF) 將下載的CMF檔COPY到SD卡根目錄底下。 下載網路上找到的PSP金手指大全1215个CMF金手指合集 同樣將檔案COPY到SD卡裡</description>
+    </item>
+    
+    <item>
+      <title>Sony PSone 遊戲主機</title>
+      <link>https://crrsn.github.io/blog/posts/f006-psone/</link>
+      <pubDate>Wed, 11 May 2022 14:16:26 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f006-psone/</guid>
+      <description>Yahoo拍賣 買的二手 PSone 主機 型號 內部 (有改機晶片？)</description>
+    </item>
+    
+    <item>
+      <title>月光寶盒 HDMI Port 故障更換</title>
+      <link>https://crrsn.github.io/blog/posts/f005-hdmi-port-fix/</link>
+      <pubDate>Wed, 11 May 2022 14:07:49 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f005-hdmi-port-fix/</guid>
+      <description>拿到一台「月光寶盒」型的機板，HDMI頭故障無法輸出 HDMI規格 處理方式 使用熱風槍將故障的HDMI Port給拆下來，換上新買的後就正常了。</description>
+    </item>
+    
+    <item>
+      <title>Game and Watch 刷機研究 - 硬體篇</title>
+      <link>https://crrsn.github.io/blog/posts/f004-gw/</link>
+      <pubDate>Wed, 11 May 2022 13:32:26 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f004-gw/</guid>
+      <description>GW內部 - Mario 記得先斷電 換晶片(MX25U51245GZ4I00) 型號：MX25U51245GZ4I00 連結：Digi-Key 腳位圖 網路上找到</description>
+    </item>
+    
     <item>
       <title>Git如何忽略.DS_Store等排除檔案</title>
-      <link>https://crrsn.github.io/blog/posts/p003-git-ignore/</link>
+      <link>https://crrsn.github.io/blog/posts/f003-git-ignore/</link>
       <pubDate>Wed, 11 May 2022 11:22:35 +0800</pubDate>
       
-      <guid>https://crrsn.github.io/blog/posts/p003-git-ignore/</guid>
+      <guid>https://crrsn.github.io/blog/posts/f003-git-ignore/</guid>
       <description>排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作</description>
     </item>
     
@@ -31,7 +67,7 @@
       <pubDate>Tue, 10 May 2022 15:56:42 +0800</pubDate>
       
       <guid>https://crrsn.github.io/blog/about/</guid>
-      <description>大家好，歡迎來到工科男LEO&#39;s Blog網站 這個網站會簡單分享一些關於電腦/生活/維修/電玩等資料 歡迎大家來交流</description>
+      <description>大家好，歡迎來到工科男LEO&#39;s Blog網站 這個網站會簡單分享一些自己感興趣及遇到的問題解法方法與心得 主要有關：軟體/硬體/維修/電玩等等 歡</description>
     </item>
     
     <item>
