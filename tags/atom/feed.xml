@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Atom on LEO&#39;s Blog</title>
+    <title>Atom on 工科男LEO&#39;s Blog</title>
     <link>https://crrsn.github.io/blog/tags/atom/</link>
-    <description>Recent content in Atom on LEO&#39;s Blog</description>
+    <description>Recent content in Atom on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 11 May 2022 09:22:20 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/atom/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 May 2022 22:36:18 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/atom/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>讓Atom編輯Markdown文件更好用</title>
       <link>https://crrsn.github.io/blog/posts/f002-atom/</link>
-      <pubDate>Wed, 11 May 2022 09:22:20 +0800</pubDate>
+      <pubDate>Tue, 10 May 2022 22:36:18 +0800</pubDate>
       
       <guid>https://crrsn.github.io/blog/posts/f002-atom/</guid>
       <description>文章目錄 文章目錄 測試平台 Atom介紹 什麼是Markdown (md檔案格式) 準備工作 常用外掛 安裝外掛 外掛介紹 markdown-toc markdown-preview-enhanced insert-timestamp language-markdown markdown-img-paste markdown-table-editor markdown-to</description>

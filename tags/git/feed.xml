@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on 工科男LEO&#39;s Blog</title>
+    <link>https://crrsn.github.io/blog/tags/git/</link>
+    <description>Recent content in Git on 工科男LEO&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 11 May 2022 11:22:35 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/git/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git如何忽略.DS_Store等排除檔案</title>
+      <link>https://crrsn.github.io/blog/posts/p003-git-ignore/</link>
+      <pubDate>Wed, 11 May 2022 11:22:35 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/p003-git-ignore/</guid>
+      <description>排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作</description>
+    </item>
+    
+  </channel>
+</rss>

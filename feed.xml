@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LEO&#39;s Blog</title>
+    <title>工科男LEO&#39;s Blog</title>
     <link>https://crrsn.github.io/blog/</link>
-    <description>Recent content on LEO&#39;s Blog</description>
+    <description>Recent content on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 11 May 2022 09:22:20 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 May 2022 11:22:35 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git如何忽略.DS_Store等排除檔案</title>
+      <link>https://crrsn.github.io/blog/posts/p003-git-ignore/</link>
+      <pubDate>Wed, 11 May 2022 11:22:35 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/p003-git-ignore/</guid>
+      <description>排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作</description>
+    </item>
+    
     <item>
       <title>讓Atom編輯Markdown文件更好用</title>
       <link>https://crrsn.github.io/blog/posts/f002-atom/</link>
-      <pubDate>Wed, 11 May 2022 09:22:20 +0800</pubDate>
+      <pubDate>Tue, 10 May 2022 22:36:18 +0800</pubDate>
       
       <guid>https://crrsn.github.io/blog/posts/f002-atom/</guid>
       <description>文章目錄 文章目錄 測試平台 Atom介紹 什麼是Markdown (md檔案格式) 準備工作 常用外掛 安裝外掛 外掛介紹 markdown-toc markdown-preview-enhanced insert-timestamp language-markdown markdown-img-paste markdown-table-editor markdown-to</description>
@@ -22,7 +31,7 @@
       <pubDate>Tue, 10 May 2022 15:56:42 +0800</pubDate>
       
       <guid>https://crrsn.github.io/blog/about/</guid>
-      <description>大家好，歡迎來到LEO&amp;rsquo;s Blog網站。 這邊會簡單分享一些實用的電腦/生活/維修/電玩。 歡迎大家來交流。 ~ 分享使人快樂 ~</description>
+      <description>大家好，歡迎來到工科男LEO&#39;s Blog網站 這個網站會簡單分享一些關於電腦/生活/維修/電玩等資料 歡迎大家來交流</description>
     </item>
     
     <item>

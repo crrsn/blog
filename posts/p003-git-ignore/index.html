@@ -3,32 +3,36 @@
    data-palette="blue"
   >
   <head>
-	<meta name="generator" content="Hugo 0.98.0" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>工科男LEO&#39;s Blog</title><link rel="apple-touch-icon" href="https://crrsn.github.io/blog/images/icons/icon-180x180.png" sizes="180x180">
+    <title>Git如何忽略.DS_Store等排除檔案 - 工科男LEO&#39;s Blog</title><link rel="apple-touch-icon" href="https://crrsn.github.io/blog/images/icons/icon-180x180.png" sizes="180x180">
 <link rel="icon" href="https://crrsn.github.io/blog/images/icons/icon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="https://crrsn.github.io/blog/images/icons/icon-16x16.png" sizes="16x16" type="image/png">
 <link rel="icon" href="https://crrsn.github.io/blog/images/icons/favicon.ico">
 <link rel="manifest" href="https://crrsn.github.io/blog/manifest.json">
 <meta name="keywords" content="" />
-<meta name="description" content="" /><meta itemprop="name" content="工科男LEO&#39;s Blog">
-<meta itemprop="description" content=""><meta property="og:title" content="工科男LEO&#39;s Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://crrsn.github.io/blog/" />
+<meta name="description" content="排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作" /><meta itemprop="name" content="Git如何忽略.DS_Store等排除檔案">
+<meta itemprop="description" content="排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作"><meta itemprop="datePublished" content="2022-05-11T11:22:35+08:00" />
+<meta itemprop="dateModified" content="2022-05-11T11:22:35+08:00" />
+<meta itemprop="wordCount" content="361">
+<meta itemprop="keywords" content="Git," /><meta property="og:title" content="Git如何忽略.DS_Store等排除檔案" />
+<meta property="og:description" content="排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://crrsn.github.io/blog/posts/p003-git-ignore/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-11T11:22:35+08:00" />
+<meta property="article:modified_time" content="2022-05-11T11:22:35+08:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="工科男LEO&#39;s Blog"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Git如何忽略.DS_Store等排除檔案"/>
+<meta name="twitter:description" content="排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作"/>
 <meta property="og:image" content="https://crrsn.github.io/blog/false"/>
-  <meta name="twitter:image" content="https://crrsn.github.io/blog/false"/><link rel="alternate" type="application/rss+xml" href="https://crrsn.github.io/blog/feed.xml" title="工科男LEO's Blog" /><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/main/bundle.min.5159448f81bf1efea8cccb9b715334a0d1e8901160a71d0cecef705a6b24d760.css" integrity="sha256-UVlEj4G/Hv6ozMubcVM0oNHokBFgpx0M7O9wWmsk12A=" crossorigin="anonymous"><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/viewer/bundle.min.05d84cef8ecf0f936293c62c90ebe16275bf8f5f5649297e1a4338e63676ba2b.css" integrity="sha256-BdhM747PD5Nik8YskOvhYnW/j19WSSl&#43;GkM45jZ2uis=" crossorigin="anonymous"></head>
+  <meta name="twitter:image" content="https://crrsn.github.io/blog/false"/><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/main/bundle.min.5159448f81bf1efea8cccb9b715334a0d1e8901160a71d0cecef705a6b24d760.css" integrity="sha256-UVlEj4G/Hv6ozMubcVM0oNHokBFgpx0M7O9wWmsk12A=" crossorigin="anonymous"><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/viewer/bundle.min.05d84cef8ecf0f936293c62c90ebe16275bf8f5f5649297e1a4338e63676ba2b.css" integrity="sha256-BdhM747PD5Nik8YskOvhYnW/j19WSSl&#43;GkM45jZ2uis=" crossorigin="anonymous"></head>
   <body><script>const items=["mode","palette"];items.forEach(function(e){const t=localStorage.getItem("hbs-"+e);t&&document.body.parentElement.setAttribute("data-"+e,t)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
-    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3 active" href="https://crrsn.github.io/blog">工科男LEO&#39;s Blog
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="https://crrsn.github.io/blog">工科男LEO&#39;s Blog
     </a>
     <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
   <div class="offcanvas-header">
@@ -39,11 +43,11 @@
   </div>
   <div class="offcanvas-body">
     <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
-      target="_blank" href="https://twitter.com/intent/tweet?title=%e5%b7%a5%e7%a7%91%e7%94%b7LEO%27s%20Blog&url=https%3a%2f%2fcrrsn.github.io%2fblog%2f">
+      target="_blank" href="https://twitter.com/intent/tweet?title=Git%e5%a6%82%e4%bd%95%e5%bf%bd%e7%95%a5.DS_Store%e7%ad%89%e6%8e%92%e9%99%a4%e6%aa%94%e6%a1%88&url=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2fp003-git-ignore%2f">
       <i class="fab fa-fw fa-twitter"></i> Twitter
     </a>
     <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
-      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrrsn.github.io%2fblog%2f">
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2fp003-git-ignore%2f">
       <i class="fab fa-fw fa-facebook-f"></i> Facebook
     </a>
   </div>
@@ -160,70 +164,89 @@
 </header>
 <main class="container">
       <div class="row content">
-<div class="col-lg-8"><div class="container"><div class="posts mb-4"><article class="row card post component"><div class="card-header">
-    <h2 class="card-title post-title">
-      <a href="https://crrsn.github.io/blog/posts/p003-git-ignore/">Git如何忽略.DS_Store等排除檔案
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/">Home</a></li><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/posts/">Posts</a></li><li class="breadcrumb-item active">Git如何忽略.DS_Store等排除檔案</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper position-sticky">
+  <div class="d-flex flex-column component rounded post-panel position-absolute">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
 </a>
-    </h2>
+
+    
+
+    
+    
+    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title">Git如何忽略.DS_Store等排除檔案
+</h1>
   </div>
   <div class="card-body"><div class="post-meta">
   <span class="post-date" title="created on 2022-05-11 11:22:35 &#43;0800 CST.">
     2022年05月11日
   </span><span class="post-taxonomies"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge post-taxonomy">軟體</a><a href="https://crrsn.github.io/blog/tags/git/" class="badge post-taxonomy">Git</a></span>
 </div>
-<div class="post-summary">
-      <p>排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作如下：
-# 新增 touch ~/.gitignore # 編輯 vim ~/.gitignore # .gitignore檔案 .DS_Store .gitignore Method 2: 全面排除所有git專案 在根目錄下(MAC/Linux 系統就是指使用者名稱)，新增一個 ~/.gitignore_global檔案。之後用文字編輯器打開，並在裡頭輸入要排除的檔案名稱。操作如下：
-# 新增 touch ~/.gitignore_global # 編輯 vim...</p><div><a class="btn btn-sm btn-primary btn-read-more" href="https://crrsn.github.io/blog/posts/p003-git-ignore/">Read More</a></div>
-    </div>
-  </div>
-</article>
-<article class="row card post component"><div class="card-header">
-    <h2 class="card-title post-title">
-      <a href="https://crrsn.github.io/blog/posts/f002-atom/">讓Atom編輯Markdown文件更好用
+<div class="post-content mb-3"><h1 id="排除方法">排除方法<a class="anchor ms-1" href="#排除方法"><i class="fas fa-link"></i></a></h1>
+<h2 id="method-1-只排除這個git專案">Method 1: 只排除這個git專案<a class="anchor ms-1" href="#method-1-只排除這個git專案"><i class="fas fa-link"></i></a></h2>
+<p>利用<code>Terminal</code>，進到git專案下，新增<code>.gitignore</code>檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 新增</span>
+</span></span><span class="line"><span class="cl">touch ~/.gitignore
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 編輯</span>
+</span></span><span class="line"><span class="cl">vim ~/.gitignore
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># .gitignore檔案</span>
+</span></span><span class="line"><span class="cl">.DS_Store
+</span></span><span class="line"><span class="cl">.gitignore
+</span></span></code></pre></div><h2 id="method-2-全面排除所有git專案">Method 2: 全面排除所有git專案<a class="anchor ms-1" href="#method-2-全面排除所有git專案"><i class="fas fa-link"></i></a></h2>
+<p>在根目錄下(MAC/Linux 系統就是指使用者名稱)，新增一個 <code>~/.gitignore_global</code>檔案。之後用文字編輯器打開，並在裡頭輸入要排除的檔案名稱。操作如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 新增</span>
+</span></span><span class="line"><span class="cl">touch ~/.gitignore_global
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 編輯</span>
+</span></span><span class="line"><span class="cl">vim ~/.gitignore_global
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 在.gitignore_global檔案中加入</span>
+</span></span><span class="line"><span class="cl">.DS_Store
+</span></span><span class="line"><span class="cl">.DS_Store?
+</span></span><span class="line"><span class="cl">.Spotlight-V100
+</span></span><span class="line"><span class="cl">.Trashes
+</span></span></code></pre></div><p>存檔後，再輸入以下程式碼</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git config --global core.excludesfile ~/.gitignore_global
+</span></span></code></pre></div><h2 id="ps-若先前已追蹤過ds_store檔該怎麼辦">PS: 若先前已追蹤過.DS_Store檔該怎麼辦？<a class="anchor ms-1" href="#ps-若先前已追蹤過ds_store檔該怎麼辦"><i class="fas fa-link"></i></a></h2>
+<p>在git專案下將其刪除追蹤即可，指令如下</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 移除當前資料夾下的.DS_Store文件</span>
+</span></span><span class="line"><span class="cl">git rm --cached .DS_Store
+</span></span></code></pre></div><p>完成後，再重新 commit 並Push到遠端即可。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s1">&#39;xxxx&#39;</span>
+</span></span><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></div><h2 id="參考資料">參考資料<a class="anchor ms-1" href="#參考資料"><i class="fas fa-link"></i></a></h2>
+<ul>
+<li><a href="https://smlpoints.com/notes-git-ignore-ds_store-files-and-so-on-gitignore.html" target="_blank" rel="noopener noreferrer">地瓜大的飛翔旅程<i class="fas fa-external-link-square-alt ms-1"></i>
+</a></li>
+</ul>
+</div></div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-prev">
+    <i class="fas fa-fw fa-chevron-circle-down post-prev-icon" data-fa-transform="rotate-90"></i>
+    <a href="https://crrsn.github.io/blog/posts/f002-atom/">讓Atom編輯Markdown文件更好用
 </a>
-    </h2>
-  </div>
-  <div class="card-body"><div class="post-meta">
-  <span class="post-date" title="created on 2022-05-10 22:36:18 &#43;0800 CST.">
-    2022年05月10日
-  </span><span class="post-taxonomies"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge post-taxonomy">軟體</a><a href="https://crrsn.github.io/blog/tags/atom/" class="badge post-taxonomy">Atom</a><a href="https://crrsn.github.io/blog/tags/markdown/" class="badge post-taxonomy">Markdown</a></span>
-</div>
-<div class="post-summary">
-      <p>文章目錄  文章目錄   測試平台  Atom介紹  什麼是Markdown (md檔案格式)  準備工作  常用外掛  安裝外掛  外掛介紹   markdown-toc  markdown-preview-enhanced  insert-timestamp  language-markdown  markdown-img-paste  markdown-table-editor  markdown-to-pdf與pdf-view    參考資料     測試平台 Windows 10 &amp; MAC OS 11.5.2
-Atom介紹 Atom 是 Github 專門為程式設計師推出的跨平臺文字編輯器，可支...</p><div><a class="btn btn-sm btn-primary btn-read-more" href="https://crrsn.github.io/blog/posts/f002-atom/">Read More</a></div>
-    </div>
-  </div>
-</article>
-<article class="row card post component"><div class="card-header">
-    <h2 class="card-title post-title">
-      <a href="https://crrsn.github.io/blog/posts/f001-firstblog/">建立人生第一個Blog網頁
-</a>
-    </h2>
-  </div>
-  <div class="card-body"><div class="post-meta">
-  <span class="post-date" title="created on 2022-05-10 10:36:18 &#43;0800 CST.">
-    2022年05月10日
-  </span><span class="post-taxonomies"><a href="https://crrsn.github.io/blog/categories/%E7%94%9F%E6%B4%BB/" class="badge post-taxonomy">生活</a><a href="https://crrsn.github.io/blog/tags/blog/" class="badge post-taxonomy">Blog</a><a href="https://crrsn.github.io/blog/tags/hugo/" class="badge post-taxonomy">Hugo</a><a href="https://crrsn.github.io/blog/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/" class="badge post-taxonomy">第一次</a></span>
-</div>
-<div class="post-summary">
-      <p>我的第一篇Blog 2022年5月10日 建立人生第一個Blog網頁
-環境: MAC OS 11.5.2
-Path: .文件/website/blog
-使用工具介紹 HUGO網頁架構 參考教學: marcolee  cfanz 
-註：cfanz所有用的風格有問題。
-選用hugo-theme-bootstrap 風格
-需安裝
-hugo mod npm pack npm install hugo server MacDown網頁編輯工具  可用來編輯mackdown格式的文本。 [LINK] 
-常用指令 啟動 Hugo 伺服器，指令如下。 http://localhost:1313/ 
-hugo server -D 新增頁面
-hugo...</p><div><a class="btn btn-sm btn-primary btn-read-more" href="https://crrsn.github.io/blog/posts/f001-firstblog/">Read More</a></div>
-    </div>
-  </div>
-</article>
-</div><div class="row table-responsive mb-3"></div>
-</div>
-
+  </div></div></div>
+</article></div>
 </div><aside class="col-lg-4 sidebar d-flex">
   <div class="container d-flex flex-column">
     
@@ -243,7 +266,21 @@ hugo...</p><div><a class="btn btn-sm btn-primary btn-read-more" href="https://cr
   </a></nav>
 </div>
 </div>
-<section class="recent-posts row card component">
+<div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">Contents</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#method-1-只排除這個git專案">Method 1: 只排除這個git專案</a></li>
+    <li><a href="#method-2-全面排除所有git專案">Method 2: 全面排除所有git專案</a></li>
+    <li><a href="#ps-若先前已追蹤過ds_store檔該怎麼辦">PS: 若先前已追蹤過.DS_Store檔該怎麼辦？</a></li>
+    <li><a href="#參考資料">參考資料</a></li>
+  </ul>
+</nav>
+  </div>
+</div><section class="recent-posts row card component">
   <div class="card-header">
     <h2 class="card-title">Recent Posts</h2>
   </div>

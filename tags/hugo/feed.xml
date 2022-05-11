@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on LEO&#39;s Blog</title>
+    <title>Hugo on 工科男LEO&#39;s Blog</title>
     <link>https://crrsn.github.io/blog/tags/hugo/</link>
-    <description>Recent content in Hugo on LEO&#39;s Blog</description>
+    <description>Recent content in Hugo on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Tue, 10 May 2022 10:36:18 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/hugo/feed.xml" rel="self" type="application/rss+xml" />
