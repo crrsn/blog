@@ -5,28 +5,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Git如何忽略.DS_Store等排除檔案 - 工科男LEO&#39;s Blog</title><link rel="apple-touch-icon" href="https://crrsn.github.io/blog/images/icons/icon-180x180.png" sizes="180x180">
+    <title>Python-Print任何東西後面接時間 - 工科男LEO&#39;s Blog</title><link rel="apple-touch-icon" href="https://crrsn.github.io/blog/images/icons/icon-180x180.png" sizes="180x180">
 <link rel="icon" href="https://crrsn.github.io/blog/images/icons/icon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="https://crrsn.github.io/blog/images/icons/icon-16x16.png" sizes="16x16" type="image/png">
 <link rel="icon" href="https://crrsn.github.io/blog/images/icons/favicon.ico">
 <link rel="manifest" href="https://crrsn.github.io/blog/manifest.json">
 <meta name="keywords" content="" />
-<meta name="description" content="排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作" /><meta itemprop="name" content="Git如何忽略.DS_Store等排除檔案">
-<meta itemprop="description" content="排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作"><meta itemprop="datePublished" content="2022-05-11T11:22:35+08:00" />
-<meta itemprop="dateModified" content="2022-05-11T11:22:35+08:00" />
-<meta itemprop="wordCount" content="361">
-<meta itemprop="keywords" content="Git," /><meta property="og:title" content="Git如何忽略.DS_Store等排除檔案" />
-<meta property="og:description" content="排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作" />
+<meta name="description" content="Python3 print with timestamp import sys import datetime old_f = sys.stdout class F: def write(self, x): old_f.write(x.replace(&#34;\n&#34;, &#34; [%s]\n&#34; % str(datetime.datetime.now()))) def flush(self): pass sys.stdout = F() print(&#39;Hello World&#39;) 結果： Hello World [2021-05-11 22:57:49.179915]" /><meta itemprop="name" content="Python-Print任何東西後面接時間">
+<meta itemprop="description" content="Python3 print with timestamp import sys import datetime old_f = sys.stdout class F: def write(self, x): old_f.write(x.replace(&#34;\n&#34;, &#34; [%s]\n&#34; % str(datetime.datetime.now()))) def flush(self): pass sys.stdout = F() print(&#39;Hello World&#39;) 結果： Hello World [2021-05-11 22:57:49.179915]"><meta itemprop="datePublished" content="2022-05-11T16:08:36+08:00" />
+<meta itemprop="dateModified" content="2022-05-11T16:08:36+08:00" />
+<meta itemprop="wordCount" content="36">
+<meta itemprop="keywords" content="Python," /><meta property="og:title" content="Python-Print任何東西後面接時間" />
+<meta property="og:description" content="Python3 print with timestamp import sys import datetime old_f = sys.stdout class F: def write(self, x): old_f.write(x.replace(&#34;\n&#34;, &#34; [%s]\n&#34; % str(datetime.datetime.now()))) def flush(self): pass sys.stdout = F() print(&#39;Hello World&#39;) 結果： Hello World [2021-05-11 22:57:49.179915]" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://crrsn.github.io/blog/posts/p003-git-ignore/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-05-11T11:22:35+08:00" />
-<meta property="article:modified_time" content="2022-05-11T11:22:35+08:00" />
+<meta property="og:url" content="https://crrsn.github.io/blog/posts/f009-python-print-timestamp/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-11T16:08:36+08:00" />
+<meta property="article:modified_time" content="2022-05-11T16:08:36+08:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Git如何忽略.DS_Store等排除檔案"/>
-<meta name="twitter:description" content="排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作"/>
+<meta name="twitter:title" content="Python-Print任何東西後面接時間"/>
+<meta name="twitter:description" content="Python3 print with timestamp import sys import datetime old_f = sys.stdout class F: def write(self, x): old_f.write(x.replace(&#34;\n&#34;, &#34; [%s]\n&#34; % str(datetime.datetime.now()))) def flush(self): pass sys.stdout = F() print(&#39;Hello World&#39;) 結果： Hello World [2021-05-11 22:57:49.179915]"/>
 <meta property="og:image" content="https://crrsn.github.io/blog/false"/>
-  <meta name="twitter:image" content="https://crrsn.github.io/blog/false"/><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/main/bundle.min.5159448f81bf1efea8cccb9b715334a0d1e8901160a71d0cecef705a6b24d760.css" integrity="sha256-UVlEj4G/Hv6ozMubcVM0oNHokBFgpx0M7O9wWmsk12A=" crossorigin="anonymous"><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/viewer/bundle.min.05d84cef8ecf0f936293c62c90ebe16275bf8f5f5649297e1a4338e63676ba2b.css" integrity="sha256-BdhM747PD5Nik8YskOvhYnW/j19WSSl&#43;GkM45jZ2uis=" crossorigin="anonymous"></head>
+  <meta name="twitter:image" content="https://crrsn.github.io/blog/false"/><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/main/bundle.min.cb5b105869b40c8f4badac0733a65b1a6e90ca19367df44c587108d4a4ca75de.css" integrity="sha256-y1sQWGm0DI9LrawHM6ZbGm6Qyhk2ffRMWHEI1KTKdd4=" crossorigin="anonymous"><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/viewer/bundle.min.05d84cef8ecf0f936293c62c90ebe16275bf8f5f5649297e1a4338e63676ba2b.css" integrity="sha256-BdhM747PD5Nik8YskOvhYnW/j19WSSl&#43;GkM45jZ2uis=" crossorigin="anonymous"></head>
   <body><script>const items=["mode","palette"];items.forEach(function(e){const t=localStorage.getItem("hbs-"+e);t&&document.body.parentElement.setAttribute("data-"+e,t)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -43,11 +43,11 @@
   </div>
   <div class="offcanvas-body">
     <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
-      target="_blank" href="https://twitter.com/intent/tweet?title=Git%e5%a6%82%e4%bd%95%e5%bf%bd%e7%95%a5.DS_Store%e7%ad%89%e6%8e%92%e9%99%a4%e6%aa%94%e6%a1%88&url=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2fp003-git-ignore%2f">
+      target="_blank" href="https://twitter.com/intent/tweet?title=Python-Print%e4%bb%bb%e4%bd%95%e6%9d%b1%e8%a5%bf%e5%be%8c%e9%9d%a2%e6%8e%a5%e6%99%82%e9%96%93&url=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2ff009-python-print-timestamp%2f">
       <i class="fab fa-fw fa-twitter"></i> Twitter
     </a>
     <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
-      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2fp003-git-ignore%2f">
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2ff009-python-print-timestamp%2f">
       <i class="fab fa-fw fa-facebook-f"></i> Facebook
     </a>
   </div>
@@ -167,7 +167,7 @@
 <div class="col-lg-8">
   <div class="container"><nav class="row card component" aria-label="breadcrumb">
   <div class="card-body">
-    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/">Home</a></li><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/posts/">Posts</a></li><li class="breadcrumb-item active">Git如何忽略.DS_Store等排除檔案</li></ol>
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/">Home</a></li><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/posts/">Posts</a></li><li class="breadcrumb-item active">Python-Print任何東西後面接時間</li></ol>
   </div>
 </nav><div class="post-panel-wrapper position-sticky">
   <div class="d-flex flex-column component rounded post-panel position-absolute">
@@ -184,69 +184,57 @@
     
     
     
-    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
-  <i class="fas fa-fw fa-list-alt"></i>
-</a>
+    
     
   </div>
 </div>
 <article class="row card component mb-4 post">
   <div class="card-header ">
-    <h1 class="card-title post-title">Git如何忽略.DS_Store等排除檔案
+    <h1 class="card-title post-title">Python-Print任何東西後面接時間
 </h1>
   </div>
   <div class="card-body"><div class="post-meta">
-  <span class="post-date" title="created on 2022-05-11 11:22:35 &#43;0800 CST.">
+  <span class="post-date" title="created on 2022-05-11 16:08:36 &#43;0800 CST.">
     2022年05月11日
-  </span><span class="post-taxonomies"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge post-taxonomy">軟體</a><a href="https://crrsn.github.io/blog/tags/git/" class="badge post-taxonomy">Git</a></span>
+  </span><span class="post-taxonomies"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge post-taxonomy">軟體</a><a href="https://crrsn.github.io/blog/tags/python/" class="badge post-taxonomy">Python</a></span>
 </div>
-<div class="post-content mb-3"><h1 id="排除方法">排除方法<a class="anchor ms-1" href="#排除方法"><i class="fas fa-link"></i></a></h1>
-<h2 id="method-1-只排除這個git專案">Method 1: 只排除這個git專案<a class="anchor ms-1" href="#method-1-只排除這個git專案"><i class="fas fa-link"></i></a></h2>
-<p>利用<code>Terminal</code>，進到git專案下，新增<code>.gitignore</code>檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作如下：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 新增</span>
-</span></span><span class="line"><span class="cl">touch ~/.gitignore
+<div class="post-content mb-3"><h1 id="python3-print-with-timestamp">Python3 print with timestamp<a class="anchor ms-1" href="#python3-print-with-timestamp"><i class="fas fa-link"></i></a></h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">sys</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">datetime</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 編輯</span>
-</span></span><span class="line"><span class="cl">vim ~/.gitignore
+</span></span><span class="line"><span class="cl"><span class="n">old_f</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">F</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">old_f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="s2">&#34;    [</span><span class="si">%s</span><span class="s2">]</span><span class="se">\n</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">flush</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">pass</span>
+</span></span><span class="line"><span class="cl"><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span> <span class="o">=</span> <span class="n">F</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># .gitignore檔案</span>
-</span></span><span class="line"><span class="cl">.DS_Store
-</span></span><span class="line"><span class="cl">.gitignore
-</span></span></code></pre></div><h2 id="method-2-全面排除所有git專案">Method 2: 全面排除所有git專案<a class="anchor ms-1" href="#method-2-全面排除所有git專案"><i class="fas fa-link"></i></a></h2>
-<p>在根目錄下(MAC/Linux 系統就是指使用者名稱)，新增一個 <code>~/.gitignore_global</code>檔案。之後用文字編輯器打開，並在裡頭輸入要排除的檔案名稱。操作如下：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 新增</span>
-</span></span><span class="line"><span class="cl">touch ~/.gitignore_global
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 編輯</span>
-</span></span><span class="line"><span class="cl">vim ~/.gitignore_global
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 在.gitignore_global檔案中加入</span>
-</span></span><span class="line"><span class="cl">.DS_Store
-</span></span><span class="line"><span class="cl">.DS_Store?
-</span></span><span class="line"><span class="cl">.Spotlight-V100
-</span></span><span class="line"><span class="cl">.Trashes
-</span></span></code></pre></div><p>存檔後，再輸入以下程式碼</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git config --global core.excludesfile ~/.gitignore_global
-</span></span></code></pre></div><h2 id="ps-若先前已追蹤過ds_store檔該怎麼辦">PS: 若先前已追蹤過.DS_Store檔該怎麼辦？<a class="anchor ms-1" href="#ps-若先前已追蹤過ds_store檔該怎麼辦"><i class="fas fa-link"></i></a></h2>
-<p>在git專案下將其刪除追蹤即可，指令如下</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 移除當前資料夾下的.DS_Store文件</span>
-</span></span><span class="line"><span class="cl">git rm --cached .DS_Store
-</span></span></code></pre></div><p>完成後，再重新 commit 並Push到遠端即可。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m <span class="s1">&#39;xxxx&#39;</span>
-</span></span><span class="line"><span class="cl">git push -u origin main
-</span></span></code></pre></div><h2 id="參考資料">參考資料<a class="anchor ms-1" href="#參考資料"><i class="fas fa-link"></i></a></h2>
-<ul>
-<li><a href="https://smlpoints.com/notes-git-ignore-ds_store-files-and-so-on-gitignore.html" target="_blank" rel="noopener noreferrer">地瓜大的飛翔旅程<i class="fas fa-external-link-square-alt ms-1"></i>
-</a></li>
-</ul>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>結果：</p>
+<blockquote>
+<p>Hello World    [2021-05-11 22:57:49.179915]</p>
+</blockquote>
 </div></div>
   <div class="card-footer"><div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-prev">
     <i class="fas fa-fw fa-chevron-circle-down post-prev-icon" data-fa-transform="rotate-90"></i>
-    <a href="https://crrsn.github.io/blog/posts/f002-atom/">讓Atom編輯Markdown文件更好用
+    <a href="https://crrsn.github.io/blog/posts/f008-python-check-version/">Python-程式碼中判斷目前Python版本
 </a>
   </div></div></div>
-</article></div>
+</article><section class="related-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">Related Posts</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="https://crrsn.github.io/blog/posts/f008-python-check-version/">Python-程式碼中判斷目前Python版本
+</a>
+          <span class="float-end post-date">2022年05月11日
+</span>
+        </li></ul>
+    </div>
+  </section></div>
 </div><aside class="col-lg-4 sidebar d-flex">
   <div class="container d-flex flex-column">
     
@@ -266,33 +254,25 @@
   </a></nav>
 </div>
 </div>
-<div class="post-toc row mb-4 card component" id="postTOC">
-  <div class="card-header">
-    <h2 class="card-title">Contents</h2>
-  </div>
-  <div class="card-body">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#method-1-只排除這個git專案">Method 1: 只排除這個git專案</a></li>
-    <li><a href="#method-2-全面排除所有git專案">Method 2: 全面排除所有git專案</a></li>
-    <li><a href="#ps-若先前已追蹤過ds_store檔該怎麼辦">PS: 若先前已追蹤過.DS_Store檔該怎麼辦？</a></li>
-    <li><a href="#參考資料">參考資料</a></li>
-  </ul>
-</nav>
-  </div>
-</div><section class="recent-posts row card component">
+<section class="recent-posts row card component">
   <div class="card-header">
     <h2 class="card-title">Recent Posts</h2>
   </div>
   <div class="card-body">
     <ul class="post-list"><li>
-        <a href="https://crrsn.github.io/blog/posts/p003-git-ignore/">Git如何忽略.DS_Store等排除檔案
+        <a href="https://crrsn.github.io/blog/posts/f009-python-print-timestamp/">Python-Print任何東西後面接時間
 </a>
       </li><li>
-        <a href="https://crrsn.github.io/blog/posts/f002-atom/">讓Atom編輯Markdown文件更好用
+        <a href="https://crrsn.github.io/blog/posts/f008-python-check-version/">Python-程式碼中判斷目前Python版本
 </a>
       </li><li>
-        <a href="https://crrsn.github.io/blog/posts/f001-firstblog/">建立人生第一個Blog網頁
+        <a href="https://crrsn.github.io/blog/posts/f007-psp-cheat/">Sony PSP 金手指 CMF
+</a>
+      </li><li>
+        <a href="https://crrsn.github.io/blog/posts/f006-psone/">Sony PSone 遊戲主機
+</a>
+      </li><li>
+        <a href="https://crrsn.github.io/blog/posts/f005-hdmi-port-fix/">月光寶盒 HDMI Port 故障更換
 </a>
       </li></ul>
   </div>
@@ -304,8 +284,10 @@
       </div>
       <div class="card-body">
         <div class="py-2"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge rounded post-taxonomy" title="軟體">
-            軟體<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/categories/%E7%94%9F%E6%B4%BB/" class="badge rounded post-taxonomy" title="生活">
-            生活<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+            軟體<span class="badge badge-sm text-white bg-accent ms-1">4</span></a><a href="https://crrsn.github.io/blog/categories/%E9%81%8A%E6%88%B2%E6%A9%9F/" class="badge rounded post-taxonomy" title="遊戲機">
+            遊戲機<span class="badge badge-sm text-white bg-accent ms-1">4</span></a><a href="https://crrsn.github.io/blog/categories/%E7%94%9F%E6%B4%BB/" class="badge rounded post-taxonomy" title="生活">
+            生活<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/categories/%E7%B6%AD%E4%BF%AE/" class="badge rounded post-taxonomy" title="維修">
+            維修<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
       </div>
     </section><section class="tags-taxonomies row card component">
       <div class="card-header">
@@ -314,13 +296,20 @@
         </h2>
       </div>
       <div class="card-body">
-        <div class="py-2"><a href="https://crrsn.github.io/blog/tags/atom/" class="badge rounded post-taxonomy" title="Atom">
+        <div class="py-2"><a href="https://crrsn.github.io/blog/tags/python/" class="badge rounded post-taxonomy" title="Python">
+            Python<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/tags/atom/" class="badge rounded post-taxonomy" title="Atom">
             Atom<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/blog/" class="badge rounded post-taxonomy" title="Blog">
-            Blog<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/git/" class="badge rounded post-taxonomy" title="Git">
-            Git<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/hugo/" class="badge rounded post-taxonomy" title="Hugo">
+            Blog<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/gamewatch/" class="badge rounded post-taxonomy" title="Game&amp;Watch">
+            Game&amp;Watch<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/git/" class="badge rounded post-taxonomy" title="Git">
+            Git<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/hdmi/" class="badge rounded post-taxonomy" title="HDMI">
+            HDMI<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/hugo/" class="badge rounded post-taxonomy" title="Hugo">
             Hugo<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/markdown/" class="badge rounded post-taxonomy" title="Markdown">
-            Markdown<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/" class="badge rounded post-taxonomy" title="第一次">
-            第一次<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+            Markdown<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/ps/" class="badge rounded post-taxonomy" title="PS">
+            PS<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/psone/" class="badge rounded post-taxonomy" title="PSOne">
+            PSOne<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/psp/" class="badge rounded post-taxonomy" title="PSP">
+            PSP<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/" class="badge rounded post-taxonomy" title="第一次">
+            第一次<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/%E9%87%91%E6%89%8B%E6%8C%87/" class="badge rounded post-taxonomy" title="金手指">
+            金手指<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
       </div>
     </section>
     
@@ -336,7 +325,7 @@
 <div class="powered-by mb-2">
   Powered by <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">Bootstrap</a> theme.
 </div></footer>
-<script src="https://crrsn.github.io/blog/assets/main/bundle.min.0a3f757ad6da71001e5d091de0a0f78976340f91eedf208752fb200c8a025e4c.js" integrity="sha256-Cj91etbacQAeXQkd4KD3iXY0D5Hu3yCHUvsgDIoCXkw=" crossorigin="anonymous" defer></script><script src="https://crrsn.github.io/blog/assets/icons/bundle.min.756b08fe873f898b176c275047c84b1ca09f120ede9df62993f55bd1442b4bd0.js" integrity="sha256-dWsI/oc/iYsXbCdQR8hLHKCfEg7enfYpk/Vb0UQrS9A=" crossorigin="anonymous" defer></script>
+<script src="https://crrsn.github.io/blog/assets/main/bundle.min.bcf9dec991e329c09b348c569429d839e5dd90969cc63b61f025a51055894423.js" integrity="sha256-vPneyZHjKcCbNIxWlCnYOeXdkJacxjth8CWlEFWJRCM=" crossorigin="anonymous" defer></script><script src="https://crrsn.github.io/blog/assets/icons/bundle.min.756b08fe873f898b176c275047c84b1ca09f120ede9df62993f55bd1442b4bd0.js" integrity="sha256-dWsI/oc/iYsXbCdQR8hLHKCfEg7enfYpk/Vb0UQrS9A=" crossorigin="anonymous" defer></script>
 <script src="https://crrsn.github.io/blog/assets/viewer/bundle.min.8a04279f4c01c6129efc48d87356904980c31656ec5a60da26fb51a1d784e1e2.js" integrity="sha256-igQnn0wBxhKe/EjYc1aQSYDDFlbsWmDaJvtRodeE4eI=" crossorigin="anonymous" defer></script>
 </body>
 </html>

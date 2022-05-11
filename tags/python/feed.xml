@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>軟體 on 工科男LEO&#39;s Blog</title>
-    <link>https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/</link>
-    <description>Recent content in 軟體 on 工科男LEO&#39;s Blog</description>
+    <title>Python on 工科男LEO&#39;s Blog</title>
+    <link>https://crrsn.github.io/blog/tags/python/</link>
+    <description>Recent content in Python on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 11 May 2022 16:08:36 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 May 2022 16:08:36 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/python/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python-Print任何東西後面接時間</title>
       <link>https://crrsn.github.io/blog/posts/f009-python-print-timestamp/</link>
@@ -23,24 +23,6 @@
       
       <guid>https://crrsn.github.io/blog/posts/f008-python-check-version/</guid>
       <description>sys.version_info sys.version_info提供一組 tuple 來表示當前 Python 的版本 import sys Py2 = sys.version_info.major == 2 Py3 = sys.version_info.major == 3 如此可用來判斷目前是使用 Python 2 或 Python 3，進一步控制程式走向</description>
-    </item>
-    
-    <item>
-      <title>Git如何忽略.DS_Store等排除檔案</title>
-      <link>https://crrsn.github.io/blog/posts/f003-git-ignore/</link>
-      <pubDate>Wed, 11 May 2022 11:22:35 +0800</pubDate>
-      
-      <guid>https://crrsn.github.io/blog/posts/f003-git-ignore/</guid>
-      <description>排除方法 Method 1: 只排除這個git專案 利用Terminal，進到git專案下，新增.gitignore檔案，並在裡頭輸入要排除追蹤的檔案名稱。操作</description>
-    </item>
-    
-    <item>
-      <title>讓Atom編輯Markdown文件更好用</title>
-      <link>https://crrsn.github.io/blog/posts/f002-atom/</link>
-      <pubDate>Tue, 10 May 2022 22:36:18 +0800</pubDate>
-      
-      <guid>https://crrsn.github.io/blog/posts/f002-atom/</guid>
-      <description>文章目錄 文章目錄 測試平台 Atom介紹 什麼是Markdown (md檔案格式) 準備工作 常用外掛 安裝外掛 外掛介紹 markdown-toc markdown-preview-enhanced insert-timestamp language-markdown markdown-img-paste markdown-table-editor markdown-to</description>
     </item>
     
   </channel>

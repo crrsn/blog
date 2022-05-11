@@ -6,9 +6,27 @@
     <description>Recent content in Posts on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 11 May 2022 14:37:25 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 May 2022 16:08:36 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/posts/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>PSP 金手指 CMF</title>
+      <title>Python-Print任何東西後面接時間</title>
+      <link>https://crrsn.github.io/blog/posts/f009-python-print-timestamp/</link>
+      <pubDate>Wed, 11 May 2022 16:08:36 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f009-python-print-timestamp/</guid>
+      <description>Python3 print with timestamp import sys import datetime old_f = sys.stdout class F: def write(self, x): old_f.write(x.replace(&amp;#34;\n&amp;#34;, &amp;#34; [%s]\n&amp;#34; % str(datetime.datetime.now()))) def flush(self): pass sys.stdout = F() print(&amp;#39;Hello World&amp;#39;) 結果： Hello World [2021-05-11 22:57:49.179915]</description>
+    </item>
+    
+    <item>
+      <title>Python-程式碼中判斷目前Python版本</title>
+      <link>https://crrsn.github.io/blog/posts/f008-python-check-version/</link>
+      <pubDate>Wed, 11 May 2022 15:46:25 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f008-python-check-version/</guid>
+      <description>sys.version_info sys.version_info提供一組 tuple 來表示當前 Python 的版本 import sys Py2 = sys.version_info.major == 2 Py3 = sys.version_info.major == 3 如此可用來判斷目前是使用 Python 2 或 Python 3，進一步控制程式走向</description>
+    </item>
+    
+    <item>
+      <title>Sony PSP 金手指 CMF</title>
       <link>https://crrsn.github.io/blog/posts/f007-psp-cheat/</link>
       <pubDate>Wed, 11 May 2022 14:37:25 +0800</pubDate>
       

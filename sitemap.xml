@@ -3,21 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://crrsn.github.io/blog/categories/</loc>
-    <lastmod>2022-05-11T14:37:25+08:00</lastmod>
+    <lastmod>2022-05-11T16:08:36+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/posts/</loc>
-    <lastmod>2022-05-11T14:37:25+08:00</lastmod>
+    <lastmod>2022-05-11T16:08:36+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/tags/python/</loc>
+    <lastmod>2022-05-11T16:08:36+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/posts/f009-python-print-timestamp/</loc>
+    <lastmod>2022-05-11T16:08:36+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/tags/</loc>
+    <lastmod>2022-05-11T16:08:36+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/</loc>
+    <lastmod>2022-05-11T16:08:36+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/</loc>
+    <lastmod>2022-05-11T16:08:36+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/posts/f008-python-check-version/</loc>
+    <lastmod>2022-05-11T15:46:25+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/tags/psp/</loc>
     <lastmod>2022-05-11T14:37:25+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/posts/f007-psp-cheat/</loc>
-    <lastmod>2022-05-11T14:37:25+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/tags/</loc>
-    <lastmod>2022-05-11T14:37:25+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/</loc>
     <lastmod>2022-05-11T14:37:25+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/categories/%E9%81%8A%E6%88%B2%E6%A9%9F/</loc>
@@ -54,9 +66,6 @@
     <lastmod>2022-05-11T11:22:35+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/posts/f003-git-ignore/</loc>
-    <lastmod>2022-05-11T11:22:35+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/</loc>
     <lastmod>2022-05-11T11:22:35+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/tags/atom/</loc>
