@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 工科男LEO&#39;s Blog</title>
+    <link>https://crrsn.github.io/blog/tags/linux/</link>
+    <description>Recent content in Linux on 工科男LEO&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 14 May 2022 20:44:31 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何完整備份/還原SD卡(Linux篇)</title>
+      <link>https://crrsn.github.io/blog/posts/f014-linux-clone-sdcard/</link>
+      <pubDate>Sat, 14 May 2022 20:44:31 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f014-linux-clone-sdcard/</guid>
+      <description>如何完整備份/還原SD卡(Linux篇) 測試環境：Linux OS 準備工作 插入SD卡後，先使用 dmesg 或 df 等指命找出備份設備的編號，會是 sd# (#: b, c, d..</description>
+    </item>
+    
+  </channel>
+</rss>

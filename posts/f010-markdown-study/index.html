@@ -1,0 +1,532 @@
+<!doctype html><html class="position-relative" itemscope itemtype="http://schema.org/WebPage" lang="en"
+  
+   data-palette="blue"
+  >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Markdown使用心得記錄 - 工科男LEO&#39;s Blog</title><link rel="apple-touch-icon" href="https://crrsn.github.io/blog/images/icons/icon-180x180.png" sizes="180x180">
+<link rel="icon" href="https://crrsn.github.io/blog/images/icons/icon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://crrsn.github.io/blog/images/icons/icon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://crrsn.github.io/blog/images/icons/favicon.ico">
+<link rel="manifest" href="https://crrsn.github.io/blog/manifest.json">
+<meta name="keywords" content="" />
+<meta name="description" content="Markdown使用心得記錄 Markdown哲學 易讀易寫：Markdown的語法全由 [標點符號] 所組成。 可讀性強：可以直接以 [純文字] 發佈，" /><meta itemprop="name" content="Markdown使用心得記錄">
+<meta itemprop="description" content="Markdown使用心得記錄 Markdown哲學 易讀易寫：Markdown的語法全由 [標點符號] 所組成。 可讀性強：可以直接以 [純文字] 發佈，"><meta itemprop="datePublished" content="2022-05-11T19:43:37+08:00" />
+<meta itemprop="dateModified" content="2022-05-11T19:43:37+08:00" />
+<meta itemprop="wordCount" content="928"><meta itemprop="image" content="https://crrsn.github.io/blog/posts/f010-markdown-study/feature.jpg">
+<meta itemprop="keywords" content="Markdown," /><meta property="og:title" content="Markdown使用心得記錄" />
+<meta property="og:description" content="Markdown使用心得記錄 Markdown哲學 易讀易寫：Markdown的語法全由 [標點符號] 所組成。 可讀性強：可以直接以 [純文字] 發佈，" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://crrsn.github.io/blog/posts/f010-markdown-study/" /><meta property="og:image" content="https://crrsn.github.io/blog/posts/f010-markdown-study/feature.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-11T19:43:37+08:00" />
+<meta property="article:modified_time" content="2022-05-11T19:43:37+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://crrsn.github.io/blog/posts/f010-markdown-study/feature.jpg"/>
+<meta name="twitter:title" content="Markdown使用心得記錄"/>
+<meta name="twitter:description" content="Markdown使用心得記錄 Markdown哲學 易讀易寫：Markdown的語法全由 [標點符號] 所組成。 可讀性強：可以直接以 [純文字] 發佈，"/>
+<link rel="stylesheet" href="https://crrsn.github.io/blog/assets/main/bundle.min.ce1061150fd033b70c4c18b63e1500d580cbecdac03254cae4a2018ae6a6ab31.css" integrity="sha256-zhBhFQ/QM7cMTBi2PhUA1YDL7NrAMlTK5KIBiuamqzE=" crossorigin="anonymous"><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/viewer/bundle.min.05d84cef8ecf0f936293c62c90ebe16275bf8f5f5649297e1a4338e63676ba2b.css" integrity="sha256-BdhM747PD5Nik8YskOvhYnW/j19WSSl&#43;GkM45jZ2uis=" crossorigin="anonymous"></head>
+  <body><script>const items=["mode","palette"];items.forEach(function(e){const t=localStorage.getItem("hbs-"+e);t&&document.body.parentElement.setAttribute("data-"+e,t)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="https://crrsn.github.io/blog">工科男LEO&#39;s Blog
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=Markdown%e4%bd%bf%e7%94%a8%e5%bf%83%e5%be%97%e8%a8%98%e9%8c%84&url=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2ff010-markdown-study%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2ff010-markdown-study%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Settings</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+
+<div class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> Mode</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> Palette</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <a id="btnPalette" class="btn btn-sm btn-outline-primary" role="button" aria-label="palettePicker">
+        <i class="fas fa-eye-dropper"></i>
+      </a>
+    </div>
+  </form>
+  <div class="mt-2 d-flex justify-content-between visually-hidden" id="palettePicker"><button type="button" id="palette-blue" aria-label="Blue"
+        class="btn btn-sm w-100 palette" data-palette="blue">
+      </button><button type="button" id="palette-blue-gray" aria-label="Blue Gray"
+        class="btn btn-sm w-100 palette" data-palette="blue-gray">
+      </button><button type="button" id="palette-brown" aria-label="Brown"
+        class="btn btn-sm w-100 palette" data-palette="brown">
+      </button><button type="button" id="palette-cyan" aria-label="Cyan"
+        class="btn btn-sm w-100 palette" data-palette="cyan">
+      </button><button type="button" id="palette-green" aria-label="Green"
+        class="btn btn-sm w-100 palette" data-palette="green">
+      </button><button type="button" id="palette-indigo" aria-label="Indigo"
+        class="btn btn-sm w-100 palette" data-palette="indigo">
+      </button><button type="button" id="palette-orange" aria-label="Orange"
+        class="btn btn-sm w-100 palette" data-palette="orange">
+      </button><button type="button" id="palette-pink" aria-label="Pink"
+        class="btn btn-sm w-100 palette" data-palette="pink">
+      </button><button type="button" id="palette-purple" aria-label="Purple"
+        class="btn btn-sm w-100 palette" data-palette="purple">
+      </button><button type="button" id="palette-red" aria-label="Red"
+        class="btn btn-sm w-100 palette" data-palette="red">
+      </button><button type="button" id="palette-teal" aria-label="Teal"
+        class="btn btn-sm w-100 palette" data-palette="teal">
+      </button><button type="button" id="palette-yellow" aria-label="Yellow"
+        class="btn btn-sm w-100 palette" data-palette="yellow">
+      </button></div>
+</div>
+<div class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-go-back" href="javascript: window.history.back();">
+    <span class="action-icon"><i class="fas fa-2x fa-chevron-circle-down" data-fa-transform="rotate-90"></i></span> Go back
+  </a>
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> Reload
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> Copy URL
+  </a><a class="action action-social-share" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> Share
+  </a></div>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
+      <form class="search-bar my-1" action="https://crrsn.github.io/blog/search">
+  <div class="input-group input-group-sm">
+    <span class="btn btn-search disabled position-absolute left-0"><i class="fas fa-fw fa-search"></i></span>
+    <input class="form-control rounded-pill" name="q" type="search" aria-label="Search">
+  </div>
+</form>
+      <ul class="navbar-nav ms-auto"><li class="nav-item">
+          <a class="nav-link" href="https://crrsn.github.io/blog/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>所有文章
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://crrsn.github.io/blog/about">
+            關於我
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://crrsn.github.io/blog/categories">
+            分類
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://crrsn.github.io/blog/tags">
+            標籤
+          </a>
+        </li></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/">Home</a></li><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/posts/">Posts</a></li><li class="breadcrumb-item active">Markdown使用心得記錄</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper position-sticky">
+  <div class="d-flex flex-column component rounded post-panel position-absolute">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+
+    
+    
+    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title">Markdown使用心得記錄
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="created on 2022-05-11 19:43:37 &#43;0800 CST.">
+    2022年05月11日
+  </span><span class="post-taxonomies"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge post-taxonomy">軟體</a><a href="https://crrsn.github.io/blog/tags/markdown/" class="badge post-taxonomy">Markdown</a></span>
+</div>
+<div class="post-content mb-3"><h1 id="markdown使用心得記錄">Markdown使用心得記錄<a class="anchor ms-1" href="#markdown使用心得記錄"><i class="fas fa-link"></i></a></h1>
+<h2 id="markdown哲學">Markdown哲學<a class="anchor ms-1" href="#markdown哲學"><i class="fas fa-link"></i></a></h2>
+<blockquote>
+<ul>
+<li>易讀易寫：Markdown的語法全由 [標點符號] 所組成。</li>
+<li>可讀性強：可以直接以 [純文字] 發佈，並且看起來不會像是由許多標籤或是格式指令所構成。</li>
+</ul>
+</blockquote>
+<h2 id="markdown基本語法">Markdown基本語法<a class="anchor ms-1" href="#markdown基本語法"><i class="fas fa-link"></i></a></h2>
+<h3 id="-標題title">§ 標題(Title)<a class="anchor ms-1" href="#-標題title"><i class="fas fa-link"></i></a></h3>
+<p>將 <code>#</code> 符號置於標題前面便能將文字顯示為標題大小，#的數量決定標題大小，#號後面有空一格。</p>
+<p>語法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh"># 這是H1標題
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span><span class="gu">## 這是H2標題
+</span></span></span><span class="line"><span class="cl"><span class="gu">### 這是H3標題
+</span></span></span><span class="line"><span class="cl"><span class="gu">#### 這是H4標題
+</span></span></span><span class="line"><span class="cl"><span class="gu">##### 這是H5標題
+</span></span></span><span class="line"><span class="cl"><span class="gu">###### 這是H6標題
+</span></span></span></code></pre></div><p>結果：</p>
+<h1 id="這是h1標題">這是H1標題<a class="anchor ms-1" href="#這是h1標題"><i class="fas fa-link"></i></a></h1>
+<h2 id="這是h2標題">這是H2標題<a class="anchor ms-1" href="#這是h2標題"><i class="fas fa-link"></i></a></h2>
+<h3 id="這是h3標題">這是H3標題<a class="anchor ms-1" href="#這是h3標題"><i class="fas fa-link"></i></a></h3>
+<h4 id="這是h4標題">這是H4標題<a class="anchor ms-1" href="#這是h4標題"><i class="fas fa-link"></i></a></h4>
+<h5 id="這是h5標題">這是H5標題<a class="anchor ms-1" href="#這是h5標題"><i class="fas fa-link"></i></a></h5>
+<h6 id="這是h6標題">這是H6標題<a class="anchor ms-1" href="#這是h6標題"><i class="fas fa-link"></i></a></h6>
+<!-- raw HTML omitted -->
+<h3 id="-引用文字block">§ 引用文字(Block)<a class="anchor ms-1" href="#-引用文字block"><i class="fas fa-link"></i></a></h3>
+<p>利用 <code>&gt;</code> 符號顯示引用文字，<code>&gt;</code> 號後面有空一格。</p>
+<p>語法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">靜思語：生氣是拿別人做錯的事來懲罰自己
+</span></span></span></code></pre></div><p>結果：</p>
+<blockquote>
+<p>靜思語：生氣是拿別人做錯的事來懲罰自己</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<h3 id="-文字格式styling-text">§ 文字格式(Styling text)<a class="anchor ms-1" href="#-文字格式styling-text"><i class="fas fa-link"></i></a></h3>
+<ul>
+<li>在文字前後加<code>*</code>，便顯示斜體</li>
+<li>在文字前後加<code>**</code>，便顯示粗體</li>
+<li>~~  ~~中間的文字會加上刪除線</li>
+</ul>
+<p>語法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">**粗體**
+</span></span><span class="line"><span class="cl"><span class="ge">*斜體*</span>
+</span></span><span class="line"><span class="cl"><span class="gd">~~我寫錯了~~</span>
+</span></span></code></pre></div><p>結果：</p>
+<p><strong>粗體</strong>
+<em>斜體</em>
+<del>我寫錯了</del>
+<!-- raw HTML omitted --></p>
+<h3 id="-列點list">§ 列點(List)<a class="anchor ms-1" href="#-列點list"><i class="fas fa-link"></i></a></h3>
+<p>無序列點：可以用「*」或「-」或「+」列點，記得後面的文字之間要空一格。</p>
+<p>語法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">*</span> Java
+</span></span><span class="line"><span class="cl"><span class="k">*</span> Python
+</span></span><span class="line"><span class="cl"><span class="k">-</span> Boy
+</span></span><span class="line"><span class="cl"><span class="k">-</span> Girl
+</span></span><span class="line"><span class="cl">+ Sun
+</span></span><span class="line"><span class="cl">+ Moon
+</span></span></code></pre></div><p>結果：</p>
+<ul>
+<li>Java</li>
+<li>Python</li>
+</ul>
+<ul>
+<li>Boy</li>
+<li>Girl</li>
+</ul>
+<ul>
+<li>Sun</li>
+<li>Moon</li>
+</ul>
+<p>有序列表：直接以1、2、3、4…列點。列點與後面的文字之間也要空一格。</p>
+<p>語法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">1.</span> 前言
+</span></span><span class="line"><span class="cl"><span class="k">2.</span> 目標
+</span></span><span class="line"><span class="cl"><span class="k">3.</span> 結論
+</span></span></code></pre></div><p>結果：</p>
+<ol>
+<li>前言</li>
+<li>目標</li>
+<li>結論</li>
+</ol>
+<!-- raw HTML omitted -->
+<p>巢狀列表：需縮排的列表，使用半型空白空3格。</p>
+<p>語法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">1.</span> 目標
+</span></span><span class="line"><span class="cl">   <span class="k">1.</span> 發表文章
+</span></span><span class="line"><span class="cl">   <span class="k">2.</span> 申請專利
+</span></span><span class="line"><span class="cl">   <span class="k">3.</span> 貢獻
+</span></span><span class="line"><span class="cl"><span class="k">2.</span> 研究著作
+</span></span><span class="line"><span class="cl">   <span class="k">*</span> Conference
+</span></span><span class="line"><span class="cl">   <span class="k">*</span> SCI/EI
+</span></span><span class="line"><span class="cl"><span class="k">3.</span> 結論
+</span></span></code></pre></div><p>結果：</p>
+<ol>
+<li>目標
+<ol>
+<li>發表文章</li>
+<li>申請專利</li>
+<li>貢獻</li>
+</ol>
+</li>
+<li>研究著作
+<ul>
+<li>Conference</li>
+<li>SCI/EI</li>
+</ul>
+</li>
+<li>結論
+<!-- raw HTML omitted --></li>
+</ol>
+<h3 id="-程式碼格式code-formatting">§ 程式碼格式(Code formatting)<a class="anchor ms-1" href="#-程式碼格式code-formatting"><i class="fas fa-link"></i></a></h3>
+<p>在文字區塊的上下方輸入3個反引號「```」，
+或用4個空格就可以mark出程式碼區塊。</p>
+<p>語法：(前面不用空隔)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">    ```python
+</span></span><span class="line"><span class="cl">    import numpy as np
+</span></span><span class="line"><span class="cl">    time = np.arange(0, 10, 0.1)
+</span></span><span class="line"><span class="cl">    amplitude = np.sin(time)
+</span></span><span class="line"><span class="cl">    ```
+</span></span></code></pre></div><p>結果：(沒標記語法格式)</p>
+<pre tabindex="0"><code>import numpy as np
+time = np.arange(0, 10, 0.1)
+amplitude = np.sin(time)
+</code></pre><p>結果：(標記語法格式python)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">amplitude</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+</span></span></code></pre></div><p>語法格式keyword: shell, cpp, python, ruby, javascript, SQL, &hellip;</p>
+<!-- raw HTML omitted -->
+<h3 id="-連結url">§ 連結(URL)<a class="anchor ms-1" href="#-連結url"><i class="fas fa-link"></i></a></h3>
+<p><code>[連結文字](連結位置)</code></p>
+<p>語法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">[<span class="nt">Google</span>](<span class="na">https://www.google.com</span>)
+</span></span></code></pre></div><p>結果：
+<a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google<i class="fas fa-external-link-square-alt ms-1"></i>
+</a></p>
+<!-- raw HTML omitted -->
+<h3 id="-表格table">§ 表格(Table)<a class="anchor ms-1" href="#-表格table"><i class="fas fa-link"></i></a></h3>
+<p>利用分割符號”-“和”|”建立表格。<code>:</code>可用來決定文字對齊方式(置中/靠左/靠右)</p>
+<p>語法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">| 姓名   | 住址 | 學號 |
+</span></span><span class="line"><span class="cl">| :---- | :--: | ---: |
+</span></span><span class="line"><span class="cl">| 阿華田 | 台北 | 25   |
+</span></span><span class="line"><span class="cl">| 李大明 | 台中 | 28   |
+</span></span></code></pre></div><p>結果：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">姓名</th>
+<th style="text-align:center">住址</th>
+<th style="text-align:right">學號</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">阿華田</td>
+<td style="text-align:center">台北</td>
+<td style="text-align:right">25</td>
+</tr>
+<tr>
+<td style="text-align:left">李大明</td>
+<td style="text-align:center">台中</td>
+<td style="text-align:right">28</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<h3 id="參考資料">參考資料<a class="anchor ms-1" href="#參考資料"><i class="fas fa-link"></i></a></h3>
+<ul>
+<li>
+<p><a href="https://ithelp.ithome.com.tw/markdown" target="_blank" rel="noopener noreferrer">Markdown說明<i class="fas fa-external-link-square-alt ms-1"></i>
+</a></p>
+</li>
+<li>
+<p><a href="https://blog.fntsr.tw/articles/726/" target="_blank" rel="noopener noreferrer">深藏若虛 - Markdown 表格語法原則<i class="fas fa-external-link-square-alt ms-1"></i>
+</a></p>
+</li>
+</ul>
+</div></div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-prev">
+    <i class="fas fa-fw fa-chevron-circle-down post-prev-icon" data-fa-transform="rotate-90"></i>
+    <a href="https://crrsn.github.io/blog/posts/f009-python-print-timestamp/">Python - Print任何東西後面接時間
+</a>
+  </div><div class="post-nav post-next">
+    <a href="https://crrsn.github.io/blog/posts/f011-cooking-01/">薑絲炒絲瓜
+</a>
+    <i class="fas fa-fw fa-chevron-circle-down post-next-icon" data-fa-transform="rotate-270"></i>
+  </div></div></div>
+</article><section class="related-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">Related Posts</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="https://crrsn.github.io/blog/posts/f002-atom/">讓Atom編輯Markdown文件更好用
+</a>
+          <span class="float-end post-date">2022年05月10日
+</span>
+        </li></ul>
+    </div>
+  </section></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    <div class="profile profile-compact card row component">
+  <div class="col-lg-5 d-flex align-items-center justify-content-center"><picture><img class="profile-avatar rounded-circle" alt="工科男LEO" src="https://crrsn.github.io/blog/images/profile.webp" loading="lazy" data-viewer-invisible
+    
+     width="108" height="108"
+     />
+</picture>
+</div>
+  <div class="col-lg-7 profile-meta"><div class="profile-name">工科男LEO</div><div class="profile-bio">分享快樂</div><div class="profile-company"><i class="fas fa-fw fa-building"></i>HOME</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Earth</div><div class="profile-about"><i class="fas fa-fw fa-user"></i><a href="https://crrsn.github.io/blog/about/">關於我</a></div><nav class="social-links nav justify-content-center"><a class="nav-link social-link" href="mailto:jn3617@yahoo.com.tw" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://github.com/crrsn" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://crrsn.github.io/blog/index.xml" title="RSS" rel="noopener noreferrer">
+    <i class="fas fa-fw fa-2x fa-rss"></i>
+  </a></nav>
+</div>
+</div>
+<div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">Contents</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#markdown哲學">Markdown哲學</a></li>
+    <li><a href="#markdown基本語法">Markdown基本語法</a>
+      <ul>
+        <li><a href="#-標題title">§ 標題(Title)</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#這是h2標題">這是H2標題</a>
+      <ul>
+        <li><a href="#這是h3標題">這是H3標題</a></li>
+        <li><a href="#-引用文字block">§ 引用文字(Block)</a></li>
+        <li><a href="#-文字格式styling-text">§ 文字格式(Styling text)</a></li>
+        <li><a href="#-列點list">§ 列點(List)</a></li>
+        <li><a href="#-程式碼格式code-formatting">§ 程式碼格式(Code formatting)</a></li>
+        <li><a href="#-連結url">§ 連結(URL)</a></li>
+        <li><a href="#-表格table">§ 表格(Table)</a></li>
+        <li><a href="#參考資料">參考資料</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div><section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">Recent Posts</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="https://crrsn.github.io/blog/posts/f013-gnw-zelda-circuitboard/">Game and Watch - ZELDA電路板
+</a>
+      </li><li>
+        <a href="https://crrsn.github.io/blog/posts/f012-cooking-02/">薑絲炒絲瓜
+</a>
+      </li><li>
+        <a href="https://crrsn.github.io/blog/posts/f014-linux-clone-sdcard/">如何完整備份/還原SD卡(Linux篇)
+</a>
+      </li><li>
+        <a href="https://crrsn.github.io/blog/posts/f011-cooking-01/">薑絲炒絲瓜
+</a>
+      </li><li>
+        <a href="https://crrsn.github.io/blog/posts/f010-markdown-study/">Markdown使用心得記錄
+</a>
+      </li></ul>
+  </div>
+</section><section class="categories-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="https://crrsn.github.io/blog/categories">Categories</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge rounded post-taxonomy" title="軟體">
+            軟體<span class="badge badge-sm text-white bg-accent ms-1">6</span></a><a href="https://crrsn.github.io/blog/categories/%E9%81%8A%E6%88%B2%E6%A9%9F/" class="badge rounded post-taxonomy" title="遊戲機">
+            遊戲機<span class="badge badge-sm text-white bg-accent ms-1">5</span></a><a href="https://crrsn.github.io/blog/categories/%E7%94%9F%E6%B4%BB/" class="badge rounded post-taxonomy" title="生活">
+            生活<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="https://crrsn.github.io/blog/categories/%E6%96%99%E7%90%86/" class="badge rounded post-taxonomy" title="料理">
+            料理<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/categories/%E7%B6%AD%E4%BF%AE/" class="badge rounded post-taxonomy" title="維修">
+            維修<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section><section class="tags-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="https://crrsn.github.io/blog/tags">Tags</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="https://crrsn.github.io/blog/tags/gamewatch/" class="badge rounded post-taxonomy" title="Game&amp;Watch">
+            Game&amp;Watch<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/tags/markdown/" class="badge rounded post-taxonomy" title="Markdown">
+            Markdown<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/tags/python/" class="badge rounded post-taxonomy" title="Python">
+            Python<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/tags/atom/" class="badge rounded post-taxonomy" title="Atom">
+            Atom<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/blog/" class="badge rounded post-taxonomy" title="Blog">
+            Blog<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/git/" class="badge rounded post-taxonomy" title="Git">
+            Git<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/hdmi/" class="badge rounded post-taxonomy" title="HDMI">
+            HDMI<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/hugo/" class="badge rounded post-taxonomy" title="Hugo">
+            Hugo<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/linux/" class="badge rounded post-taxonomy" title="Linux">
+            Linux<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/ps/" class="badge rounded post-taxonomy" title="PS">
+            PS<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/psone/" class="badge rounded post-taxonomy" title="PSOne">
+            PSOne<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/psp/" class="badge rounded post-taxonomy" title="PSP">
+            PSP<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/" class="badge rounded post-taxonomy" title="第一次">
+            第一次<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/%E9%87%91%E6%89%8B%E6%8C%87/" class="badge rounded post-taxonomy" title="金手指">
+            金手指<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav justify-content-center mb-2"><a class="nav-link social-link" target="_blank" href="https://crrsn.github.io/blog/index.xml" title="RSS" rel="noopener noreferrer">
+    <i class="fas fa-fw fa-2x fa-rss"></i>
+  </a></nav>
+<div class="copyright mb-2">
+  
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">Bootstrap</a> theme.
+</div></footer>
+<script src="https://crrsn.github.io/blog/assets/main/bundle.min.bcf9dec991e329c09b348c569429d839e5dd90969cc63b61f025a51055894423.js" integrity="sha256-vPneyZHjKcCbNIxWlCnYOeXdkJacxjth8CWlEFWJRCM=" crossorigin="anonymous" defer></script><script src="https://crrsn.github.io/blog/assets/icons/bundle.min.756b08fe873f898b176c275047c84b1ca09f120ede9df62993f55bd1442b4bd0.js" integrity="sha256-dWsI/oc/iYsXbCdQR8hLHKCfEg7enfYpk/Vb0UQrS9A=" crossorigin="anonymous" defer></script>
+<script src="https://crrsn.github.io/blog/assets/viewer/bundle.min.8a04279f4c01c6129efc48d87356904980c31656ec5a60da26fb51a1d784e1e2.js" integrity="sha256-igQnn0wBxhKe/EjYc1aQSYDDFlbsWmDaJvtRodeE4eI=" crossorigin="anonymous" defer></script>
+</body>
+</html>

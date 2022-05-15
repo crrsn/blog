@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>維修 on 工科男LEO&#39;s Blog</title>
+    <link>https://crrsn.github.io/blog/categories/%E7%B6%AD%E4%BF%AE/</link>
+    <description>Recent content in 維修 on 工科男LEO&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 11 May 2022 14:07:49 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/categories/%E7%B6%AD%E4%BF%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>月光寶盒 HDMI Port 故障更換</title>
+      <link>https://crrsn.github.io/blog/posts/f005-hdmi-port-fix/</link>
+      <pubDate>Wed, 11 May 2022 14:07:49 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f005-hdmi-port-fix/</guid>
+      <description>拿到一台「月光寶盒」型的機板，HDMI頭故障無法輸出 HDMI規格 處理方式 使用熱風槍將故障的HDMI Port給拆下來，換上新買的後就正常了。</description>
+    </item>
+    
+  </channel>
+</rss>
