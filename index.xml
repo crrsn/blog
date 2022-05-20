@@ -6,7 +6,16 @@
     <description>Recent content on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 15 May 2022 18:52:35 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 May 2022 09:38:55 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown文件中畫圖</title>
+      <link>https://crrsn.github.io/blog/posts/f016-markdown-mermaid/</link>
+      <pubDate>Fri, 20 May 2022 09:38:55 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f016-markdown-mermaid/</guid>
+      <description>Atom-mermaid 2022/5/19 下午10:59:26 https://mermaid-js.github.io/mermaid/#/ Atom-mermaid 前言 Flowchart - Example 1 Flowchart - Example 2 Sequence Mermaid - Graph Mermaid - Flowchart Mermaid - Pie Mermaid - Gantt 前言 一畫勝千言(A picture is worth a thousand words) 您可以在 Markdown 文件中使用自帶的 Mermaid (美人魚</description>
+    </item>
+    
     <item>
       <title>DIY強效電鍍品還原(清潔)劑</title>
       <link>https://crrsn.github.io/blog/posts/f015-diy/</link>
@@ -139,7 +148,7 @@
       <pubDate>Tue, 10 May 2022 15:56:42 +0800</pubDate>
       
       <guid>https://crrsn.github.io/blog/about/</guid>
-      <description>大家好，歡迎來到工科男LEO&#39;s Blog網站 這個網站主要是寫些「生活記錄、心得分享、個人筆記」等等… 記錄一些我感興趣 或是 遇到某些問題解決的方</description>
+      <description>大家好，歡迎來到工科男LEO&#39;s Blog網站 這個網站主要是寫些「生活記錄、心得分享、個人筆記」等等… 記錄一些我感興趣 或是 生活中遇到某些問題解</description>
     </item>
     
     <item>
