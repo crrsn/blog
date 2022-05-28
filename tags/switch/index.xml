@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Switch on 工科男LEO&#39;s Blog</title>
+    <link>https://crrsn.github.io/blog/tags/switch/</link>
+    <description>Recent content in Switch on 工科男LEO&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 24 May 2022 10:21:58 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/switch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>遊戲主機維修 - Diode檔讀值</title>
+      <link>https://crrsn.github.io/blog/posts/f018-console-repare-diode-readings/</link>
+      <pubDate>Tue, 24 May 2022 10:21:58 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f018-console-repare-diode-readings/</guid>
+      <description>Console Repare - HDMI/Type-C Port Diode Readings Switch Type-C A5 (CC1) short Switch Type-C port found a short in A5 (CC1) Line. SOLVED Removed M92 - short cleared, replaced M92 all good. NOTE CC1/CC2 go to M92T36, on some models it also passes through a small diode array. Either one of those can cause a short there. Switch M92T36 IC Switch OLED Charger Port Buy It Swich OLED charge ports</description>
+    </item>
+    
+  </channel>
+</rss>
