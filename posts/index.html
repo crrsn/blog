@@ -166,6 +166,25 @@
   </div>
 </nav><div class="posts mb-4"><article class="row card post component"><div class="card-header">
     <h2 class="card-title post-title">
+      <a href="https://crrsn.github.io/blog/posts/f019-ubuntu-xlaunch/">Windows 10 - WSL Ubuntu X-windows設定
+</a>
+    </h2>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="created on 2022-05-31 22:12:03 &#43;0800 CST.">
+    2022年05月31日
+  </span><span class="post-taxonomies"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge post-taxonomy">軟體</a><a href="https://crrsn.github.io/blog/tags/ubuntu/" class="badge post-taxonomy">Ubuntu</a><a href="https://crrsn.github.io/blog/tags/x-windows/" class="badge post-taxonomy">X-windows</a><a href="https://crrsn.github.io/blog/tags/%E5%BF%83%E5%BE%97/" class="badge post-taxonomy">心得</a></span>
+</div>
+<div class="post-summary">
+      <p>Windows 10 - WSL Ubuntu X-windows設定 2022/5/31 下午10:12:39
+安裝Windows版的XLaunch工具  設定Ubuntu參數 #vim ~/.profile，加入下面參數後重開Ubuntuexport DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk &#39;{print $2}&#39;):0 設定XLaunch參數 開啟XLaunch，Display settings使用預設值，點下一步。
+ Client startup使用預設值，點下一步。
+ Extra settings，勾選Disable access control，並...</p><div><a class="btn btn-sm btn-primary btn-read-more" href="https://crrsn.github.io/blog/posts/f019-ubuntu-xlaunch/">Read More</a></div>
+    </div>
+  </div>
+</article>
+<article class="row card post component"><div class="card-header">
+    <h2 class="card-title post-title">
       <a href="https://crrsn.github.io/blog/posts/f018-console-repare-diode-readings/">遊戲主機維修 - Diode檔讀值
 </a>
     </h2>
@@ -354,27 +373,6 @@ CC1/CC2 go to M92T36, on some models it also passes through a small diode array.
     </div>
   </div>
 </article>
-<article class="row card post component"><div class="card-header">
-    <h2 class="card-title post-title">
-      <a href="https://crrsn.github.io/blog/posts/f009-python-print-timestamp/">Python - Print任何東西後面接時間
-</a>
-    </h2>
-  </div>
-  <div class="card-body"><picture>
-    <source srcset="https://crrsn.github.io/blog/posts/f009-python-print-timestamp/feature_hu4d00a60f032c5753b25d3114a66f076c_12252_500x0_resize_q75_box.jpg" media="(max-width: 576px)">
-    <img class="img-fluid" alt="feature.jpg" src="https://crrsn.github.io/blog/posts/f009-python-print-timestamp/feature_hu4d00a60f032c5753b25d3114a66f076c_12252_180x0_resize_q75_box.jpg" data-src="https://crrsn.github.io/blog/posts/f009-python-print-timestamp/feature.jpg" loading="lazy"/>
-  </picture><div class="post-meta">
-  <span class="post-date" title="created on 2022-05-11 16:08:36 &#43;0800 CST.">
-    2022年05月11日
-  </span><span class="post-taxonomies"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge post-taxonomy">軟體</a><a href="https://crrsn.github.io/blog/tags/python/" class="badge post-taxonomy">Python</a></span>
-</div>
-<div class="post-summary">
-      <p>Python3 print with timestamp import sys import datetime old_f = sys.stdout class F: def write(self, x): old_f.write(x.replace(&#34;\n&#34;, &#34; [%s]\n&#34; % str(datetime.datetime.now()))) def flush(self): pass sys.stdout = F() print(&#39;Hello World&#39;) 結果：
- Hello World [2021-05-11 22:57:49.179915]
- </p>
-    </div>
-  </div>
-</article>
 </div><div class="row table-responsive mb-3">
     <ul class="pagination pagination-default">
       <li class="page-item disabled">
@@ -423,6 +421,9 @@ CC1/CC2 go to M92T36, on some models it also passes through a small diode array.
   </div>
   <div class="card-body">
     <ul class="post-list"><li>
+        <a href="https://crrsn.github.io/blog/posts/f019-ubuntu-xlaunch/">Windows 10 - WSL Ubuntu X-windows設定
+</a>
+      </li><li>
         <a href="https://crrsn.github.io/blog/posts/f018-console-repare-diode-readings/">遊戲主機維修 - Diode檔讀值
 </a>
       </li><li>
@@ -434,9 +435,6 @@ CC1/CC2 go to M92T36, on some models it also passes through a small diode array.
       </li><li>
         <a href="https://crrsn.github.io/blog/posts/f015-diy/">DIY強效電鍍品還原(清潔)劑
 </a>
-      </li><li>
-        <a href="https://crrsn.github.io/blog/posts/f013-gnw-zelda-circuitboard/">Game and Watch - ZELDA電路板
-</a>
       </li></ul>
   </div>
 </section><section class="categories-taxonomies row card component">
@@ -447,7 +445,7 @@ CC1/CC2 go to M92T36, on some models it also passes through a small diode array.
       </div>
       <div class="card-body">
         <div class="py-2"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge rounded post-taxonomy" title="軟體">
-            軟體<span class="badge badge-sm text-white bg-accent ms-1">7</span></a><a href="https://crrsn.github.io/blog/categories/%E9%81%8A%E6%88%B2%E6%A9%9F/" class="badge rounded post-taxonomy" title="遊戲機">
+            軟體<span class="badge badge-sm text-white bg-accent ms-1">8</span></a><a href="https://crrsn.github.io/blog/categories/%E9%81%8A%E6%88%B2%E6%A9%9F/" class="badge rounded post-taxonomy" title="遊戲機">
             遊戲機<span class="badge badge-sm text-white bg-accent ms-1">6</span></a><a href="https://crrsn.github.io/blog/categories/%E7%94%9F%E6%B4%BB/" class="badge rounded post-taxonomy" title="生活">
             生活<span class="badge badge-sm text-white bg-accent ms-1">5</span></a><a href="https://crrsn.github.io/blog/categories/%E7%B6%AD%E4%BF%AE/" class="badge rounded post-taxonomy" title="維修">
             維修<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="https://crrsn.github.io/blog/categories/%E6%96%99%E7%90%86/" class="badge rounded post-taxonomy" title="料理">
@@ -463,7 +461,8 @@ CC1/CC2 go to M92T36, on some models it also passes through a small diode array.
         <div class="py-2"><a href="https://crrsn.github.io/blog/tags/markdown/" class="badge rounded post-taxonomy" title="Markdown">
             Markdown<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="https://crrsn.github.io/blog/tags/gamewatch/" class="badge rounded post-taxonomy" title="Game&amp;Watch">
             Game&amp;Watch<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/tags/python/" class="badge rounded post-taxonomy" title="Python">
-            Python<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/tags/atom/" class="badge rounded post-taxonomy" title="Atom">
+            Python<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/tags/%E5%BF%83%E5%BE%97/" class="badge rounded post-taxonomy" title="心得">
+            心得<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/tags/atom/" class="badge rounded post-taxonomy" title="Atom">
             Atom<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/blog/" class="badge rounded post-taxonomy" title="Blog">
             Blog<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/diy/" class="badge rounded post-taxonomy" title="DIY">
             DIY<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/git/" class="badge rounded post-taxonomy" title="Git">
@@ -475,11 +474,14 @@ CC1/CC2 go to M92T36, on some models it also passes through a small diode array.
             PS5<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/psone/" class="badge rounded post-taxonomy" title="PSOne">
             PSOne<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/psp/" class="badge rounded post-taxonomy" title="PSP">
             PSP<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/switch/" class="badge rounded post-taxonomy" title="Switch">
-            Switch<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/xbox/" class="badge rounded post-taxonomy" title="XBOX">
-            XBOX<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/%E5%BF%83%E5%BE%97/" class="badge rounded post-taxonomy" title="心得">
-            心得<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/" class="badge rounded post-taxonomy" title="第一次">
-            第一次<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/%E9%87%91%E6%89%8B%E6%8C%87/" class="badge rounded post-taxonomy" title="金手指">
-            金手指<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+            Switch<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/ubuntu/" class="badge rounded post-taxonomy" title="Ubuntu">
+            Ubuntu<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/x-windows/" class="badge rounded post-taxonomy" title="X-windows">
+            X-windows<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/xbox/" class="badge rounded post-taxonomy" title="XBOX">
+            XBOX<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/" class="badge rounded post-taxonomy" title="第一次">
+            第一次<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags" class="badge rounded post-taxonomy" title='ALL'>
+          ALL
+          <span class="badge badge-sm text-white bg-accent ms-1">21</span>
+        </a></div>
       </div>
     </section>
     
