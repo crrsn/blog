@@ -1,0 +1,720 @@
+<!doctype html><html class="position-relative" itemscope itemtype="http://schema.org/WebPage" lang="en"
+  
+   data-palette="blue"
+  >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kb知識庫管理器-使用心得 - 工科男LEO&#39;s Blog</title><link rel="apple-touch-icon" href="https://crrsn.github.io/blog/images/icons/icon-180x180.png" sizes="180x180">
+<link rel="icon" href="https://crrsn.github.io/blog/images/icons/icon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://crrsn.github.io/blog/images/icons/icon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://crrsn.github.io/blog/images/icons/favicon.ico">
+<link rel="manifest" href="https://crrsn.github.io/blog/manifest.json">
+<meta name="keywords" content="" />
+<meta name="description" content="kb. A minimalist knowledge base manager 一個極簡的知識庫管理器 kb. A minimalist knowledge base manager 一個極簡的知識庫管理器 測試環境 前言 kb簡介 安裝 kb 設置 kb 的指令別名(alias) kb 常用指令 將知識" /><meta itemprop="name" content="kb知識庫管理器-使用心得">
+<meta itemprop="description" content="kb. A minimalist knowledge base manager 一個極簡的知識庫管理器 kb. A minimalist knowledge base manager 一個極簡的知識庫管理器 測試環境 前言 kb簡介 安裝 kb 設置 kb 的指令別名(alias) kb 常用指令 將知識"><meta itemprop="datePublished" content="2022-06-02T05:55:03+08:00" />
+<meta itemprop="dateModified" content="2022-06-02T05:55:03+08:00" />
+<meta itemprop="wordCount" content="1768">
+<meta itemprop="keywords" content="kb,心得,Git," /><meta property="og:title" content="kb知識庫管理器-使用心得" />
+<meta property="og:description" content="kb. A minimalist knowledge base manager 一個極簡的知識庫管理器 kb. A minimalist knowledge base manager 一個極簡的知識庫管理器 測試環境 前言 kb簡介 安裝 kb 設置 kb 的指令別名(alias) kb 常用指令 將知識" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://crrsn.github.io/blog/posts/f020-kb/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-06-02T05:55:03+08:00" />
+<meta property="article:modified_time" content="2022-06-02T05:55:03+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="kb知識庫管理器-使用心得"/>
+<meta name="twitter:description" content="kb. A minimalist knowledge base manager 一個極簡的知識庫管理器 kb. A minimalist knowledge base manager 一個極簡的知識庫管理器 測試環境 前言 kb簡介 安裝 kb 設置 kb 的指令別名(alias) kb 常用指令 將知識"/>
+<meta property="og:image" content="https://crrsn.github.io/blog/false"/>
+  <meta name="twitter:image" content="https://crrsn.github.io/blog/false"/><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/main/bundle.min.e88973143bfca1d42c3894e3ff8555722048fa704a71607afcb2a2ada83d9336.css" integrity="sha256-6IlzFDv8odQsOJTj/4VVciBI+nBKcWB6/LKirag9kzY=" crossorigin="anonymous"><link rel="stylesheet" href="https://crrsn.github.io/blog/assets/viewer/bundle.min.05d84cef8ecf0f936293c62c90ebe16275bf8f5f5649297e1a4338e63676ba2b.css" integrity="sha256-BdhM747PD5Nik8YskOvhYnW/j19WSSl&#43;GkM45jZ2uis=" crossorigin="anonymous"></head>
+  <body><script>const items=["mode","palette"];items.forEach(function(e){const t=localStorage.getItem("hbs-"+e);t&&document.body.parentElement.setAttribute("data-"+e,t)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="https://crrsn.github.io/blog">工科男LEO&#39;s Blog
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=kb%e7%9f%a5%e8%ad%98%e5%ba%ab%e7%ae%a1%e7%90%86%e5%99%a8-%e4%bd%bf%e7%94%a8%e5%bf%83%e5%be%97&url=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2ff020-kb%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2ff020-kb%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Settings</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+
+<div class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> Mode</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> Palette</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <a id="btnPalette" class="btn btn-sm btn-outline-primary" role="button" aria-label="palettePicker">
+        <i class="fas fa-eye-dropper"></i>
+      </a>
+    </div>
+  </form>
+  <div class="mt-2 d-flex justify-content-between visually-hidden" id="palettePicker"><button type="button" id="palette-blue" aria-label="Blue"
+        class="btn btn-sm w-100 palette" data-palette="blue">
+      </button><button type="button" id="palette-blue-gray" aria-label="Blue Gray"
+        class="btn btn-sm w-100 palette" data-palette="blue-gray">
+      </button><button type="button" id="palette-brown" aria-label="Brown"
+        class="btn btn-sm w-100 palette" data-palette="brown">
+      </button><button type="button" id="palette-cyan" aria-label="Cyan"
+        class="btn btn-sm w-100 palette" data-palette="cyan">
+      </button><button type="button" id="palette-green" aria-label="Green"
+        class="btn btn-sm w-100 palette" data-palette="green">
+      </button><button type="button" id="palette-indigo" aria-label="Indigo"
+        class="btn btn-sm w-100 palette" data-palette="indigo">
+      </button><button type="button" id="palette-orange" aria-label="Orange"
+        class="btn btn-sm w-100 palette" data-palette="orange">
+      </button><button type="button" id="palette-pink" aria-label="Pink"
+        class="btn btn-sm w-100 palette" data-palette="pink">
+      </button><button type="button" id="palette-purple" aria-label="Purple"
+        class="btn btn-sm w-100 palette" data-palette="purple">
+      </button><button type="button" id="palette-red" aria-label="Red"
+        class="btn btn-sm w-100 palette" data-palette="red">
+      </button><button type="button" id="palette-teal" aria-label="Teal"
+        class="btn btn-sm w-100 palette" data-palette="teal">
+      </button><button type="button" id="palette-yellow" aria-label="Yellow"
+        class="btn btn-sm w-100 palette" data-palette="yellow">
+      </button></div>
+</div>
+<div class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-go-back" href="javascript: window.history.back();">
+    <span class="action-icon"><i class="fas fa-2x fa-chevron-circle-down" data-fa-transform="rotate-90"></i></span> Go back
+  </a>
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> Reload
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> Copy URL
+  </a><a class="action action-social-share" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> Share
+  </a></div>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
+      <form class="search-bar my-1" action="https://crrsn.github.io/blog/search">
+  <div class="input-group input-group-sm">
+    <span class="btn btn-search disabled position-absolute left-0"><i class="fas fa-fw fa-search"></i></span>
+    <input class="form-control rounded-pill" name="q" type="search" aria-label="Search">
+  </div>
+</form>
+      <ul class="navbar-nav ms-auto"><li class="nav-item">
+          <a class="nav-link" href="https://crrsn.github.io/blog/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>所有文章
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://crrsn.github.io/blog/about">
+            關於我
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://crrsn.github.io/blog/categories">
+            分類
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://crrsn.github.io/blog/tags">
+            標籤
+          </a>
+        </li></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main class="container">
+      <div class="row content">
+<div class="col-lg-8">
+
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/">Home</a></li><li class="breadcrumb-item"><a href="https://crrsn.github.io/blog/posts/">Posts</a></li><li class="breadcrumb-item active">kb知識庫管理器-使用心得</li></ol>
+  </div>
+</nav><div class="views">
+	    <span class="views">
+	        <img src="https://visitor-badge.glitch.me/badge?page_id=https%3a%2f%2fcrrsn.github.io%2fblog%2fposts%2ff020-kb%2f" alt="Views"/>
+	    </span>
+	  </div><div class="post-panel-wrapper position-sticky">
+  <div class="d-flex flex-column component rounded post-panel position-absolute">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+
+    
+    
+    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title">kb知識庫管理器-使用心得
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="created on 2022-06-02 05:55:03 &#43;0800 CST.">
+    2022年06月02日
+  </span><span class="post-taxonomies"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge post-taxonomy">軟體</a><a href="https://crrsn.github.io/blog/tags/git/" class="badge post-taxonomy">Git</a><a href="https://crrsn.github.io/blog/tags/kb/" class="badge post-taxonomy">kb</a><a href="https://crrsn.github.io/blog/tags/%E5%BF%83%E5%BE%97/" class="badge post-taxonomy">心得</a></span>
+</div>
+<div class="post-content mb-3"><h1 id="kb-a-minimalist-knowledge-base-manager-一個極簡的知識庫管理器">kb. A minimalist knowledge base manager 一個極簡的知識庫管理器<a class="anchor ms-1" href="#kb-a-minimalist-knowledge-base-manager-一個極簡的知識庫管理器"><i class="fas fa-link"></i></a></h1>
+<hr>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#kb-a-minimalist-knowledge-base-manager-%e4%b8%80%e5%80%8b%e6%a5%b5%e7%b0%a1%e7%9a%84%e7%9f%a5%e8%ad%98%e5%ba%ab%e7%ae%a1%e7%90%86%e5%99%a8">kb. A minimalist knowledge base manager 一個極簡的知識庫管理器
+</a>
+<ul>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e6%b8%ac%e8%a9%a6%e7%92%b0%e5%a2%83">測試環境
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e5%89%8d%e8%a8%80">前言
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#kb%e7%b0%a1%e4%bb%8b">kb簡介
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e5%ae%89%e8%a3%9d-kb">安裝 kb
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e8%a8%ad%e7%bd%ae-kb-%e7%9a%84%e6%8c%87%e4%bb%a4%e5%88%a5%e5%90%8dalias">設置 kb 的指令別名(alias)
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#kb-%e5%b8%b8%e7%94%a8%e6%8c%87%e4%bb%a4">kb 常用指令
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e5%b0%87%e7%9f%a5%e8%ad%98%e5%ba%ab%e5%90%8c%e6%ad%a5%e5%88%b0github%e4%b8%8a">將知識庫同步到Github上
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e5%90%8c%e6%ad%a5kb%e7%9f%a5%e8%ad%98%e5%ba%ab%e6%8c%87%e4%bb%a4">同步kb知識庫指令
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#template%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95">Template使用方法
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e4%bf%ae%e6%94%b9%e5%b7%b2%e5%9c%a8%e7%9f%a5%e8%ad%98%e5%ba%ab%e4%b8%ad%e7%9a%84%e6%aa%94%e6%a1%88%e5%8f%83%e6%95%b8%e6%a8%99%e9%a1%8c%e9%a1%9e%e5%88%a5%e6%a8%99%e7%b1%a4-%e4%bd%bf%e7%94%a8-kb-update-%e6%8c%87%e4%bb%a4">修改已在知識庫中的檔案參數(標題/類別/標籤)-使用 kb update 指令
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e6%9f%a5%e6%89%be%e7%89%b9%e5%ae%9a%e8%b3%87%e6%96%99">查找特定資料
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#apps-viewer-and-editor-for-kb">Apps (viewer and editor) for kb
+</a></li>
+</ul>
+</li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e9%81%87%e5%88%b0%e4%b8%80%e5%80%8b%e5%a4%a7%e5%95%8f%e9%a1%8c---%e8%b3%87%e6%96%99%e5%8a%a0%e5%af%86">遇到一個大問題 - 資料加密
+</a>
+<ul>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#install-git-crypt-for-linux">Install git-crypt for Linux
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#install-git-crypt-for-macos">Install git-crypt for MacOS
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#init-the-git-crypt-to-repo">Init the git-crypt to repo
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e5%8a%a0%e5%af%86%e8%a8%ad%e5%ae%9a">加密設定
+</a></li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#git-crypt-%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a0%85">git-crypt 注意事項
+</a></li>
+</ul>
+</li>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e5%a6%82%e4%bd%95%e5%9c%a8%e5%8f%a6%e4%b8%80%e5%8f%b0%e9%9b%bb%e8%85%a6%e4%b8%8a%e5%90%8c%e6%ad%a5-kb-%e7%9f%a5%e8%ad%98%e5%ba%ab">如何在另一台電腦上同步 kb 知識庫
+</a>
+<ul>
+<li><a href="https://crrsn.github.io/blog/posts/f020-kb/#%e5%8f%83%e8%80%83%e8%b3%87%e6%96%99">參考資料
+</a></li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="測試環境">測試環境<a class="anchor ms-1" href="#測試環境"><i class="fas fa-link"></i></a></h3>
+<ul>
+<li>Ubuntu 20.04.4 LTS</li>
+<li>CentOS</li>
+<li>MacOS</li>
+</ul>
+<h3 id="前言">前言<a class="anchor ms-1" href="#前言"><i class="fas fa-link"></i></a></h3>
+<p>發現自己太過頻繁地花時間在找特定的資料，例如：寫程式的指南、某台電腦的IP、如何使用某個Linux指令等等。所以在想是否有個小工具，能將常用資料加入知識庫中，方便快速搜索特定資料，增加工作效率，最好還能多台電腦同步。在Github上找到了一個名為 <strong>kb</strong> 的工具，可提供一種快速直觀的方式來獲取使用者建的知識庫，解決這個問題。</p>
+<h3 id="kb簡介">kb簡介<a class="anchor ms-1" href="#kb簡介"><i class="fas fa-link"></i></a></h3>
+<p>kb 是一個<strong>極簡命令式知識庫管理器</strong>，可用來快速收集筆記、組織分類、及快速查找的功能。雖然 kb 主要針對基於文本的筆記收集，但它也支持非文本文件，例如圖像、pdf等。基本上，kb 提供了一種基於文本的簡潔方式來組織您的知識</p>
+<p>kb 的特點：</p>
+<ol>
+<li>將筆記、指南、程序、備忘單的項目收集到一個有組織的知識庫中</li>
+<li>可對數據加以分類並標記，例如：標題、類別、標籤等 (add)</li>
+<li>可使用(或不使用)語法高亮顯示知識庫中的項目 (view)</li>
+<li>可使用正則表達式來查找知識庫 (grep)</li>
+<li>導入/導出整個知識庫 (import/export)</li>
+</ol>
+<h3 id="安裝-kb">安裝 kb<a class="anchor ms-1" href="#安裝-kb"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pip install -U git+https://github.com/gnebbia/kb
+</span></span></code></pre></div><h3 id="設置-kb-的指令別名alias">設置 kb 的指令別名(alias)<a class="anchor ms-1" href="#設置-kb-的指令別名alias"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cat <span class="s">&lt;&lt;EOF &gt; ~/.kb_alias
+</span></span></span><span class="line"><span class="cl"><span class="s">alias kbl=&#34;kb list&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">alias kbe=&#34;kb edit&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">alias kba=&#34;kb add&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">alias kbv=&#34;kb view&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">alias kbd=&#34;kb delete --id&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">alias kbg=&#34;kb grep&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">alias kbt=&#34;kb list --tags&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">EOF</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;source ~/.kb_alias&#34;</span> &gt;&gt; ~/.bashrc
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.kb_alias
+</span></span></code></pre></div><h3 id="kb-常用指令">kb 常用指令<a class="anchor ms-1" href="#kb-常用指令"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1">#Add file</span>
+</span></span><span class="line"><span class="cl">kba fileName
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## List files</span>
+</span></span><span class="line"><span class="cl">kbl
+</span></span><span class="line"><span class="cl">kbl -v
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## View file</span>
+</span></span><span class="line"><span class="cl">kbv fileName
+</span></span><span class="line"><span class="cl">kbv --id <span class="c1">#</span>
+</span></span></code></pre></div><p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f020-kb/assets/markdown-img-paste-20220602062343666.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+
+(kbl)</p>
+<p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f020-kb/assets/markdown-img-paste-2022060206242058.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+
+(kbl -v)</p>
+<h3 id="將知識庫同步到github上">將知識庫同步到Github上<a class="anchor ms-1" href="#將知識庫同步到github上"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># Create a repo at Github</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># The branch name change to &#39;main&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create kb git sync function</span>
+</span></span><span class="line"><span class="cl">kb sync init
+</span></span><span class="line"><span class="cl"><span class="c1"># enter your repo path: git@github.com:xxx/xxx.git</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Rename the branch of kb git repo. and push one time</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># &#39;git init&#39; default set branch name to &#39;master&#39; not &#39;main&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># but kb sync command only accept &#39;main&#39; branch to push/pull</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/.local/share/kb
+</span></span><span class="line"><span class="cl">git branch -m master main
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 先手動push一次，之後就可以用kb sync push/pull的指令進行</span>
+</span></span><span class="line"><span class="cl">git push --set-upstream origin main
+</span></span><span class="line"><span class="cl"><span class="c1"># or</span>
+</span></span><span class="line"><span class="cl">git push -u origin HEAD
+</span></span></code></pre></div><h3 id="同步kb知識庫指令">同步kb知識庫指令<a class="anchor ms-1" href="#同步kb知識庫指令"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1">#從Github下載知識庫</span>
+</span></span><span class="line"><span class="cl">kb sync pull
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#上傳知識庫到Github</span>
+</span></span><span class="line"><span class="cl">kb sync push
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># if you get error below:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   Some error occurred while pushing the code</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   but this command will create a commit in /home/userName/.local/share/kb</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># mean your branch name is not right, you can pull manually by</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /home/userName/.local/share/kb
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></div><h3 id="template使用方法">Template使用方法<a class="anchor ms-1" href="#template使用方法"><i class="fas fa-link"></i></a></h3>
+<pre><code>#列出目前所有template
+kb template list
+</code></pre>
+<p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f020-kb/assets/markdown-img-paste-20220602065356926.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+</p>
+<pre><code>#編輯template文件
+kb template edit default
+</code></pre>
+<p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f020-kb/assets/markdown-img-paste-20220602065552382.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+
+(以#開頭的文字以黃色顯示)
+(以!開頭的文字以紅色顯示)
+(以;;開頭的文字以綠色顯示)</p>
+<p>例如有個文字內容為：</p>
+<pre tabindex="0"><code># This is the Title
+;; comment here
+! red color text
+</code></pre><p>使用kbv這個文件將顯示：
+<picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f020-kb/assets/markdown-img-paste-20220602070138897.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+</p>
+<h3 id="修改已在知識庫中的檔案參數標題類別標籤-使用-kb-update-指令">修改已在知識庫中的檔案參數(標題/類別/標籤)-使用 kb update 指令<a class="anchor ms-1" href="#修改已在知識庫中的檔案參數標題類別標籤-使用-kb-update-指令"><i class="fas fa-link"></i></a></h3>
+<pre tabindex="0"><code>#kb update help文件
+kb update -h
+usage: kb update [-h] [-i ID] [-t TITLE] [-c CATEGORY] [-g TAGS] [-a AUTHOR] [-s STATUS] [--template TEMPLATE]
+                 [-e] [-b BODY]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i ID, --id ID        ID of the artifact to update
+  -t TITLE, --title TITLE
+                        Title to update
+  -c CATEGORY, --category CATEGORY
+                        Category to update
+  -g TAGS, --tags TAGS  Tags to update in the form &#34;tag1;tag2;...;tagN&#34;
+  -a AUTHOR, --author AUTHOR
+                        Author to update
+  -s STATUS, --status STATUS
+                        Status to update
+  --template TEMPLATE   Template to update
+  -e, --edit-content    Edit content of the artifact with an editor
+  -b BODY, --body BODY  Update the body of the artifact (erases the current content)
+</code></pre><p>使用方法：kb update -i 4 -t TEST_KB -c manual -g &ldquo;test;kb&rdquo;</p>
+<p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f020-kb/assets/markdown-img-paste-20220602070707249.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+</p>
+<h3 id="查找特定資料">查找特定資料<a class="anchor ms-1" href="#查找特定資料"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1">#檔名有gui的資料</span>
+</span></span><span class="line"><span class="cl">kbl gui
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Tags有kb的資料</span>
+</span></span><span class="line"><span class="cl">kbl -g kb
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Tags有kb + 在default分類中的資料</span>
+</span></span><span class="line"><span class="cl">kbl -g kb -c default
+</span></span></code></pre></div><h3 id="apps-viewer-and-editor-for-kb">Apps (viewer and editor) for kb<a class="anchor ms-1" href="#apps-viewer-and-editor-for-kb"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># Install GNOME Image Viewer</span>
+</span></span><span class="line"><span class="cl">sudo apt-get install eog
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Install Gedit</span>
+</span></span><span class="line"><span class="cl">sudo apt-get install gedit
+</span></span><span class="line"><span class="cl"><span class="c1"># Set default editor tool</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">EDITOR</span><span class="o">=</span>/usr/bin/gedit
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Install PDF Viewer</span>
+</span></span><span class="line"><span class="cl"> sudo apt-get install evince
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Install Markdown Editor</span>
+</span></span><span class="line"><span class="cl">sudo apt-get install retext
+</span></span><span class="line"><span class="cl"><span class="c1"># change file name to *.mkd</span>
+</span></span><span class="line"><span class="cl">kb update -i <span class="m">1</span> -t kb_README.mkd
+</span></span><span class="line"><span class="cl"><span class="c1"># using kbv also can modify the file</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># but using kve will open file with gedit</span>
+</span></span></code></pre></div><hr>
+<h1 id="遇到一個大問題---資料加密">遇到一個大問題 - 資料加密<a class="anchor ms-1" href="#遇到一個大問題---資料加密"><i class="fas fa-link"></i></a></h1>
+<p>成功使用<code>kb sync push</code>將知識庫上傳Github了，但是…</p>
+<p>這樣我的所有「私人筆記資料」不就被大家<strong>看光光</strong>了嗎？(沒錯)</p>
+<p>後來找到&rsquo;git-crypt&rsquo;這個git的輔助工具，可在git push/pull時進行加密/解密</p>
+<p>如下是經過git-crypt上傳的純文字檔，無法在Github上顯示 (水啦)</p>
+<p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f020-kb/assets/markdown-img-paste-20220602071539593.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+</p>
+<h3 id="install-git-crypt-for-linux">Install git-crypt for Linux<a class="anchor ms-1" href="#install-git-crypt-for-linux"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># Install openssl</span>
+</span></span><span class="line"><span class="cl">sudo apt-get install libssl-dev    <span class="c1"># for Ubuntu</span>
+</span></span><span class="line"><span class="cl">yum install openssl-devel          <span class="c1"># for CentOS</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Clone the git-crypt repo., make and install</span>
+</span></span><span class="line"><span class="cl">git clone https://github.com/AGWA/git-crypt
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> git-crypt
+</span></span><span class="line"><span class="cl">make
+</span></span><span class="line"><span class="cl">make install
+</span></span></code></pre></div><h3 id="install-git-crypt-for-macos">Install git-crypt for MacOS<a class="anchor ms-1" href="#install-git-crypt-for-macos"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">brew install git-crypt
+</span></span></code></pre></div><h3 id="init-the-git-crypt-to-repo">Init the git-crypt to repo<a class="anchor ms-1" href="#init-the-git-crypt-to-repo"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> /home/userName/.local/share/kb
+</span></span><span class="line"><span class="cl">git-crypt init
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#設定哪些資料需要進行加密</span>
+</span></span><span class="line"><span class="cl">vim .gitattributes
+</span></span><span class="line"><span class="cl">    data/** <span class="nv">filter</span><span class="o">=</span>git-crypt <span class="nv">diff</span><span class="o">=</span>git-crypt
+</span></span><span class="line"><span class="cl">    .gitattributes !filter !diff
+</span></span></code></pre></div><h3 id="加密設定">加密設定<a class="anchor ms-1" href="#加密設定"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1">#Generate key，填入User_ID</span>
+</span></span><span class="line"><span class="cl">gpg --gen-key
+</span></span><span class="line"><span class="cl">gpg --list-keys   <span class="c1">#List key</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Add key to git-crypt</span>
+</span></span><span class="line"><span class="cl">git-crypt add-gpg-user USER_ID
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#export the key</span>
+</span></span><span class="line"><span class="cl">git-crypt export-key ~/mykey
+</span></span></code></pre></div><p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f020-kb/assets/markdown-img-paste-20220602064022912.png" loading="lazy"
+    
+    
+     />
+</picture>
+
+</p>
+<h3 id="git-crypt-注意事項">git-crypt 注意事項<a class="anchor ms-1" href="#git-crypt-注意事項"><i class="fas fa-link"></i></a></h3>
+<ul>
+<li>在設定好 git-crypt 前的資料不會被加密</li>
+<li>產生的key可用export方式保存，之後別台電腦要使用</li>
+</ul>
+<hr>
+<h1 id="如何在另一台電腦上同步-kb-知識庫">如何在另一台電腦上同步 kb 知識庫<a class="anchor ms-1" href="#如何在另一台電腦上同步-kb-知識庫"><i class="fas fa-link"></i></a></h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1">#Gen a key, and copy key into github</span>
+</span></span><span class="line"><span class="cl">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;Github_Mail_Address&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">eval</span> <span class="s2">&#34;</span><span class="k">$(</span>ssh-agent -s<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">ssh-add ~/.ssh/id_rsa
+</span></span><span class="line"><span class="cl">vim ~/.ssh/id_rsa.pub
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Install git-crype tool</span>
+</span></span><span class="line"><span class="cl">git clone https://github.com/AGWA/git-crypt
+</span></span><span class="line"><span class="cl">make
+</span></span><span class="line"><span class="cl">make install
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Install kb tool, set the alias, add a test_kb.txt file for test</span>
+</span></span><span class="line"><span class="cl">pip install -U git+https://github.com/gnebbia/kb
+</span></span><span class="line"><span class="cl">kba test_kb.txt
+</span></span><span class="line"><span class="cl"><span class="c1"># using kba and kbe to find the location of kb data path</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># is in: ~/.local/share/kb/data/default/test_kb.txt</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># remove this kb folder</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/.local/share/
+</span></span><span class="line"><span class="cl">rm -rf kb
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Clone my kb repo to ~/.local/share/</span>
+</span></span><span class="line"><span class="cl">git clone git@github.com:xxx/xxx.git
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Copy myKey file to this PC</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Unlock this repo</span>
+</span></span><span class="line"><span class="cl">git-crypt unlock /opt/mykey
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Test the kb function</span>
+</span></span><span class="line"><span class="cl">kbl
+</span></span><span class="line"><span class="cl">kb sync pull
+</span></span><span class="line"><span class="cl">kb sync push
+</span></span></code></pre></div><h3 id="參考資料">參考資料<a class="anchor ms-1" href="#參考資料"><i class="fas fa-link"></i></a></h3>
+<p><a href="https://github.com/gnebbia/kb" target="_blank" rel="noopener noreferrer">kb. A minimalist knowledge base manager<i class="fas fa-external-link-square-alt ms-1"></i>
+</a></p>
+<p><a href="https://github.com/AGWA/git-crypt" target="_blank" rel="noopener noreferrer">git-crypt - transparent file encryption in git<i class="fas fa-external-link-square-alt ms-1"></i>
+</a></p>
+</div></div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-prev">
+    <i class="fas fa-fw fa-chevron-circle-down post-prev-icon" data-fa-transform="rotate-90"></i>
+    <a href="https://crrsn.github.io/blog/posts/f019-ubuntu-xlaunch/">Windows 10 - WSL Ubuntu X-windows設定
+</a>
+  </div></div></div>
+</article><section class="related-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">Related Posts</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="https://crrsn.github.io/blog/posts/f019-ubuntu-xlaunch/">Windows 10 - WSL Ubuntu X-windows設定
+</a>
+          <span class="float-end post-date">2022年05月31日
+</span>
+        </li><li>
+          <a href="https://crrsn.github.io/blog/posts/f017-2022-note-tax/">2022報稅個人心得記錄
+</a>
+          <span class="float-end post-date">2022年05月23日
+</span>
+        </li><li>
+          <a href="https://crrsn.github.io/blog/posts/f003-git-ignore/">Git如何忽略.DS_Store等排除檔案
+</a>
+          <span class="float-end post-date">2022年05月11日
+</span>
+        </li></ul>
+    </div>
+  </section></div>
+
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    <div class="profile profile-compact card row component">
+  <div class="col-lg-5 d-flex align-items-center justify-content-center"><picture><img class="profile-avatar rounded-circle" alt="工科男LEO" src="https://crrsn.github.io/blog/images/profile.webp" loading="lazy" data-viewer-invisible
+    
+     width="108" height="108"
+     />
+</picture>
+</div>
+  <div class="col-lg-7 profile-meta"><div class="profile-name">工科男LEO</div><div class="profile-bio">分享快樂</div><div class="profile-company"><i class="fas fa-fw fa-building"></i>HOME</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Earth</div><div class="profile-about"><i class="fas fa-fw fa-user"></i><a href="https://crrsn.github.io/blog/about/">關於我</a></div><nav class="social-links nav justify-content-center"><a class="nav-link social-link" href="mailto:jn3617@yahoo.com.tw" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://github.com/crrsn" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://crrsn.github.io/blog/index.xml" title="RSS" rel="noopener noreferrer">
+    <i class="fas fa-fw fa-2x fa-rss"></i>
+  </a></nav>
+</div>
+</div>
+<div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">Contents</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#測試環境">測試環境</a></li>
+        <li><a href="#前言">前言</a></li>
+        <li><a href="#kb簡介">kb簡介</a></li>
+        <li><a href="#安裝-kb">安裝 kb</a></li>
+        <li><a href="#設置-kb-的指令別名alias">設置 kb 的指令別名(alias)</a></li>
+        <li><a href="#kb-常用指令">kb 常用指令</a></li>
+        <li><a href="#將知識庫同步到github上">將知識庫同步到Github上</a></li>
+        <li><a href="#同步kb知識庫指令">同步kb知識庫指令</a></li>
+        <li><a href="#template使用方法">Template使用方法</a></li>
+        <li><a href="#修改已在知識庫中的檔案參數標題類別標籤-使用-kb-update-指令">修改已在知識庫中的檔案參數(標題/類別/標籤)-使用 kb update 指令</a></li>
+        <li><a href="#查找特定資料">查找特定資料</a></li>
+        <li><a href="#apps-viewer-and-editor-for-kb">Apps (viewer and editor) for kb</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#install-git-crypt-for-linux">Install git-crypt for Linux</a></li>
+        <li><a href="#install-git-crypt-for-macos">Install git-crypt for MacOS</a></li>
+        <li><a href="#init-the-git-crypt-to-repo">Init the git-crypt to repo</a></li>
+        <li><a href="#加密設定">加密設定</a></li>
+        <li><a href="#git-crypt-注意事項">git-crypt 注意事項</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#參考資料">參考資料</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div><section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">Recent Posts</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="https://crrsn.github.io/blog/posts/f020-kb/">kb知識庫管理器-使用心得
+</a>
+      </li><li>
+        <a href="https://crrsn.github.io/blog/posts/f019-ubuntu-xlaunch/">Windows 10 - WSL Ubuntu X-windows設定
+</a>
+      </li><li>
+        <a href="https://crrsn.github.io/blog/posts/f018-console-repare-diode-readings/">遊戲主機維修 - Diode檔讀值
+</a>
+      </li><li>
+        <a href="https://crrsn.github.io/blog/posts/f017-2022-note-tax/">2022報稅個人心得記錄
+</a>
+      </li><li>
+        <a href="https://crrsn.github.io/blog/posts/f016-markdown-mermaid/">Markdown文件中畫圖
+</a>
+      </li></ul>
+  </div>
+</section><section class="categories-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="https://crrsn.github.io/blog/categories">Categories</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/" class="badge rounded post-taxonomy" title="軟體">
+            軟體<span class="badge badge-sm text-white bg-accent ms-1">9</span></a><a href="https://crrsn.github.io/blog/categories/%E9%81%8A%E6%88%B2%E6%A9%9F/" class="badge rounded post-taxonomy" title="遊戲機">
+            遊戲機<span class="badge badge-sm text-white bg-accent ms-1">6</span></a><a href="https://crrsn.github.io/blog/categories/%E7%94%9F%E6%B4%BB/" class="badge rounded post-taxonomy" title="生活">
+            生活<span class="badge badge-sm text-white bg-accent ms-1">5</span></a><a href="https://crrsn.github.io/blog/categories/%E7%B6%AD%E4%BF%AE/" class="badge rounded post-taxonomy" title="維修">
+            維修<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="https://crrsn.github.io/blog/categories/%E6%96%99%E7%90%86/" class="badge rounded post-taxonomy" title="料理">
+            料理<span class="badge badge-sm text-white bg-accent ms-1">2</span></a></div>
+      </div>
+    </section><section class="tags-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="https://crrsn.github.io/blog/tags">Tags</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="https://crrsn.github.io/blog/tags/markdown/" class="badge rounded post-taxonomy" title="Markdown">
+            Markdown<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="https://crrsn.github.io/blog/tags/%E5%BF%83%E5%BE%97/" class="badge rounded post-taxonomy" title="心得">
+            心得<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="https://crrsn.github.io/blog/tags/gamewatch/" class="badge rounded post-taxonomy" title="Game&amp;Watch">
+            Game&amp;Watch<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/tags/git/" class="badge rounded post-taxonomy" title="Git">
+            Git<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/tags/python/" class="badge rounded post-taxonomy" title="Python">
+            Python<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="https://crrsn.github.io/blog/tags/atom/" class="badge rounded post-taxonomy" title="Atom">
+            Atom<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/blog/" class="badge rounded post-taxonomy" title="Blog">
+            Blog<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/diy/" class="badge rounded post-taxonomy" title="DIY">
+            DIY<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/hdmi/" class="badge rounded post-taxonomy" title="HDMI">
+            HDMI<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/hugo/" class="badge rounded post-taxonomy" title="Hugo">
+            Hugo<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/kb/" class="badge rounded post-taxonomy" title="kb">
+            kb<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/linux/" class="badge rounded post-taxonomy" title="Linux">
+            Linux<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/ps/" class="badge rounded post-taxonomy" title="PS">
+            PS<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/ps5/" class="badge rounded post-taxonomy" title="PS5">
+            PS5<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/psone/" class="badge rounded post-taxonomy" title="PSOne">
+            PSOne<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/psp/" class="badge rounded post-taxonomy" title="PSP">
+            PSP<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/switch/" class="badge rounded post-taxonomy" title="Switch">
+            Switch<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/ubuntu/" class="badge rounded post-taxonomy" title="Ubuntu">
+            Ubuntu<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/x-windows/" class="badge rounded post-taxonomy" title="X-windows">
+            X-windows<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags/xbox/" class="badge rounded post-taxonomy" title="XBOX">
+            XBOX<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="https://crrsn.github.io/blog/tags" class="badge rounded post-taxonomy" title='ALL'>
+          ALL
+          <span class="badge badge-sm text-white bg-accent ms-1">22</span>
+        </a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main>
+
+<footer class="footer mt-auto py-3 text-center container"><div class="copyright mb-2">
+  
+</div>
+</footer>
+
+<script src="https://crrsn.github.io/blog/assets/main/bundle.min.480b2f743a665aca6c2247ec7fa4b6f235767107e5a750050adf1a6c41e21a16.js" integrity="sha256-SAsvdDpmWspsIkfsf6S28jV2cQflp1AFCt8abEHiGhY=" crossorigin="anonymous" defer></script><script src="https://crrsn.github.io/blog/assets/icons/bundle.min.756b08fe873f898b176c275047c84b1ca09f120ede9df62993f55bd1442b4bd0.js" integrity="sha256-dWsI/oc/iYsXbCdQR8hLHKCfEg7enfYpk/Vb0UQrS9A=" crossorigin="anonymous" defer></script>
+<script src="https://crrsn.github.io/blog/assets/viewer/bundle.min.8a04279f4c01c6129efc48d87356904980c31656ec5a60da26fb51a1d784e1e2.js" integrity="sha256-igQnn0wBxhKe/EjYc1aQSYDDFlbsWmDaJvtRodeE4eI=" crossorigin="anonymous" defer></script>
+</body>
+</html>

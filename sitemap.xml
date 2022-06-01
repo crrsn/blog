@@ -3,13 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://crrsn.github.io/blog/categories/</loc>
-    <lastmod>2022-05-31T22:12:03+08:00</lastmod>
+    <lastmod>2022-06-02T05:55:03+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/tags/git/</loc>
+    <lastmod>2022-06-02T05:55:03+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/tags/kb/</loc>
+    <lastmod>2022-06-02T05:55:03+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/posts/f020-kb/</loc>
+    <lastmod>2022-06-02T05:55:03+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/posts/</loc>
-    <lastmod>2022-05-31T22:12:03+08:00</lastmod>
+    <lastmod>2022-06-02T05:55:03+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/tags/</loc>
-    <lastmod>2022-05-31T22:12:03+08:00</lastmod>
+    <lastmod>2022-06-02T05:55:03+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/</loc>
+    <lastmod>2022-06-02T05:55:03+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/tags/%E5%BF%83%E5%BE%97/</loc>
+    <lastmod>2022-06-02T05:55:03+08:00</lastmod>
+  </url><url>
+    <loc>https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/</loc>
+    <lastmod>2022-06-02T05:55:03+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/tags/ubuntu/</loc>
     <lastmod>2022-05-31T22:12:03+08:00</lastmod>
@@ -18,15 +36,6 @@
     <lastmod>2022-05-31T22:12:03+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/tags/x-windows/</loc>
-    <lastmod>2022-05-31T22:12:03+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/</loc>
-    <lastmod>2022-05-31T22:12:03+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/tags/%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2022-05-31T22:12:03+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/categories/%E8%BB%9F%E9%AB%94/</loc>
     <lastmod>2022-05-31T22:12:03+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/tags/ps5/</loc>
@@ -124,9 +133,6 @@
   </url><url>
     <loc>https://crrsn.github.io/blog/posts/f004-gw/</loc>
     <lastmod>2022-05-11T13:32:26+08:00</lastmod>
-  </url><url>
-    <loc>https://crrsn.github.io/blog/tags/git/</loc>
-    <lastmod>2022-05-11T11:22:35+08:00</lastmod>
   </url><url>
     <loc>https://crrsn.github.io/blog/posts/f003-git-ignore/</loc>
     <lastmod>2022-05-11T11:22:35+08:00</lastmod>

@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 31 May 2022 22:12:03 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jun 2022 05:55:03 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>kb知識庫管理器-使用心得</title>
+      <link>https://crrsn.github.io/blog/posts/f020-kb/</link>
+      <pubDate>Thu, 02 Jun 2022 05:55:03 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f020-kb/</guid>
+      <description>kb. A minimalist knowledge base manager 一個極簡的知識庫管理器 kb. A minimalist knowledge base manager 一個極簡的知識庫管理器 測試環境 前言 kb簡介 安裝 kb 設置 kb 的指令別名(alias) kb 常用指令 將知識</description>
+    </item>
+    
     <item>
       <title>Windows 10 - WSL Ubuntu X-windows設定</title>
       <link>https://crrsn.github.io/blog/posts/f019-ubuntu-xlaunch/</link>
