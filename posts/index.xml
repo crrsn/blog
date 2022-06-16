@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 02 Jun 2022 05:55:03 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jun 2022 22:12:50 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Game and Watch 刷機研究 - 換256MB晶片</title>
+      <link>https://crrsn.github.io/blog/posts/f021-gnw-256mb-chip/</link>
+      <pubDate>Wed, 15 Jun 2022 22:12:50 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f021-gnw-256mb-chip/</guid>
+      <description>256MB晶片 型號：MX66U2G45GXRI00 [購買連結] 這顆晶片腳位是24-Ball BGA型式，需要製作轉接板才能方便的焊接到目前的電</description>
+    </item>
+    
     <item>
       <title>kb知識庫管理器-使用心得</title>
       <link>https://crrsn.github.io/blog/posts/f020-kb/</link>

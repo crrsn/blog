@@ -6,7 +6,16 @@
     <description>Recent content in Game&amp;Watch on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 15 May 2022 17:40:41 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/gamewatch/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jun 2022 22:12:50 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/gamewatch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Game and Watch 刷機研究 - 換256MB晶片</title>
+      <link>https://crrsn.github.io/blog/posts/f021-gnw-256mb-chip/</link>
+      <pubDate>Wed, 15 Jun 2022 22:12:50 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f021-gnw-256mb-chip/</guid>
+      <description>256MB晶片 型號：MX66U2G45GXRI00 [購買連結] 這顆晶片腳位是24-Ball BGA型式，需要製作轉接板才能方便的焊接到目前的電</description>
+    </item>
+    
     <item>
       <title>Game and Watch - ZELDA電路板</title>
       <link>https://crrsn.github.io/blog/posts/f013-gnw-zelda-circuitboard/</link>
