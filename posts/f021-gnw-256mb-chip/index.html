@@ -14,7 +14,7 @@
 <meta name="description" content="256MB晶片 型號：MX66U2G45GXRI00 [購買連結] 這顆晶片腳位是24-Ball BGA型式，需要製作轉接板才能方便的焊接到目前的電" /><meta itemprop="name" content="Game and Watch 刷機研究 - 換256MB晶片">
 <meta itemprop="description" content="256MB晶片 型號：MX66U2G45GXRI00 [購買連結] 這顆晶片腳位是24-Ball BGA型式，需要製作轉接板才能方便的焊接到目前的電"><meta itemprop="datePublished" content="2022-06-15T22:12:50+08:00" />
 <meta itemprop="dateModified" content="2022-06-15T22:12:50+08:00" />
-<meta itemprop="wordCount" content="301">
+<meta itemprop="wordCount" content="401">
 <meta itemprop="keywords" content="Game&amp;Watch," /><meta property="og:title" content="Game and Watch 刷機研究 - 換256MB晶片" />
 <meta property="og:description" content="256MB晶片 型號：MX66U2G45GXRI00 [購買連結] 這顆晶片腳位是24-Ball BGA型式，需要製作轉接板才能方便的焊接到目前的電" />
 <meta property="og:type" content="article" />
@@ -189,7 +189,9 @@
     
     
     
-    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
     
   </div>
 </div>
@@ -207,7 +209,7 @@
 <p>型號：MX66U2G45GXRI00   <a href="https://www.digikey.tw/zh/products/detail/macronix/MX66U2G45GXRI00/9599042" target="_blank" rel="noopener noreferrer">[購買連結]<i class="fas fa-external-link-square-alt ms-1"></i>
 </a></p>
 <p>這顆晶片腳位是24-Ball BGA型式，需要製作<strong>轉接板</strong>才能方便的焊接到目前的電路板上。</p>
-<p>Discord上某位大神有開發這個轉接板，可以跟他購買。</p>
+<p>Discord - stacksmashing上的大神(DNA64)有開發這個轉接板，可以跟他購買。</p>
 <p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f021-gnw-256mb-chip/assets/markdown-img-paste-2022061616160712.png" loading="lazy"
     
     
@@ -215,8 +217,11 @@
 </picture>
 
 </p>
+<h4 id="bga24-to-sop8轉接板資料">BGA24-to-SOP8轉接板資料<a class="anchor ms-1" href="#bga24-to-sop8轉接板資料"><i class="fas fa-link"></i></a></h4>
+<p><a href="https://github.com/DNA64/bga24-to-sop8-adapter" target="_blank" rel="noopener noreferrer">https://github.com/DNA64/bga24-to-sop8-adapter<i class="fas fa-external-link-square-alt ms-1"></i>
+</a></p>
 <blockquote>
-<p>Q: 是否可以直接從BGA晶片上拉出8條線到主板呢？</p>
+<p>Q: 但我想發揮DIY精神… 是否可以直接從BGA晶片上拉出8條線到主板呢？</p>
 </blockquote>
 <h1 id="原晶片的八支腳定義">原晶片的八支腳定義<a class="anchor ms-1" href="#原晶片的八支腳定義"><i class="fas fa-link"></i></a></h1>
 <p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f021-gnw-256mb-chip/assets/markdown-img-paste-20220616161939947.png" loading="lazy"
@@ -227,10 +232,10 @@
 
 </p>
 <h1 id="分析轉接版接線圖">分析轉接版接線圖<a class="anchor ms-1" href="#分析轉接版接線圖"><i class="fas fa-link"></i></a></h1>
-<p>藍色：主板上的晶片八腳定義 (1~8)
-紅色：轉接版上的過孔 (A/B/C)
-黑色：BGA腳位圖
-綠字：BGA 5x5 點位圖</p>
+<p>藍色：主板上的晶片八腳定義 (1~8)</p>
+<p>紅色：轉接版上的過孔 (A/B/C)</p>
+<p>黑色：BGA腳位圖</p>
+<p>綠字：BGA 5x5 點位圖</p>
 <p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f021-gnw-256mb-chip/assets/markdown-img-paste-20220616161636268.png" loading="lazy"
     
     
@@ -260,6 +265,8 @@
 
 </p>
 <h1 id="開始焊接---晶片拉出八條線">開始焊接 - 晶片拉出八條線<a class="anchor ms-1" href="#開始焊接---晶片拉出八條線"><i class="fas fa-link"></i></a></h1>
+<p>(難度：★★★★★)</p>
+<p>使用0.14mm的直焊型漆包線 (35AWG)</p>
 <p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f021-gnw-256mb-chip/assets/markdown-img-paste-20220616162120926.png" loading="lazy"
     
     
@@ -268,6 +275,7 @@
 
 </p>
 <h1 id="開始焊接---接到主板上">開始焊接 - 接到主板上<a class="anchor ms-1" href="#開始焊接---接到主板上"><i class="fas fa-link"></i></a></h1>
+<p>(難度：★★★☆☆)</p>
 <p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f021-gnw-256mb-chip/assets/markdown-img-paste-20220616162220231.png" loading="lazy"
     
     
@@ -275,7 +283,15 @@
 </picture>
 
 </p>
-<h1 id="重新燒機---成功升級256mb">重新燒機 - 成功升級256MB<a class="anchor ms-1" href="#重新燒機---成功升級256mb"><i class="fas fa-link"></i></a></h1>
+<h1 id="重新刷機">重新刷機<a class="anchor ms-1" href="#重新刷機"><i class="fas fa-link"></i></a></h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># https://github.com/BrianPugh/game-and-watch-patch</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> game-and-watch-patch
+</span></span><span class="line"><span class="cl">make <span class="nv">PATCH_PARAMS</span><span class="o">=</span><span class="s2">&#34;--device=mario&#34;</span> <span class="nv">LARGE_FLASH</span><span class="o">=</span><span class="m">1</span> flash_patched
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># https://github.com/olderzeus/game-and-watch-retro-go</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> game-and-watch-retro-go
+</span></span><span class="line"><span class="cl">make <span class="nv">GNW_TARGET</span><span class="o">=</span>mario <span class="nv">EXTFLASH_SIZE_MB</span><span class="o">=</span><span class="m">255</span> <span class="nv">EXTFLASH_OFFSET</span><span class="o">=</span><span class="m">1048576</span> <span class="nv">INTFLASH_BANK</span><span class="o">=</span><span class="m">2</span> <span class="nv">COVERFLOW</span><span class="o">=</span><span class="m">1</span> <span class="nv">JPG_QUALITY</span><span class="o">=</span><span class="m">75</span> <span class="nv">CODEPAGE</span><span class="o">=</span><span class="m">950</span> flash
+</span></span></code></pre></div><h1 id="成功升級256mb">成功升級256MB<a class="anchor ms-1" href="#成功升級256mb"><i class="fas fa-link"></i></a></h1>
 <p><picture><img class="img-fluid" alt="" src="https://crrsn.github.io/blog/posts/f021-gnw-256mb-chip/assets/markdown-img-paste-20220616162309713.png" loading="lazy"
     
     
@@ -327,7 +343,22 @@
   </a></nav>
 </div>
 </div>
-<section class="recent-posts row card component">
+<div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">Contents</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div><section class="recent-posts row card component">
   <div class="card-header">
     <h2 class="card-title">Recent Posts</h2>
   </div>
