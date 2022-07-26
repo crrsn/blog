@@ -6,7 +6,16 @@
     <description>Recent content in PSP on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 11 May 2022 14:37:25 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/psp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jul 2022 20:00:00 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/tags/psp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PSP解磚研究-PSP2000成功</title>
+      <link>https://crrsn.github.io/blog/posts/f022-psp-unbrick/</link>
+      <pubDate>Mon, 25 Jul 2022 20:00:00 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f022-psp-unbrick/</guid>
+      <description>前言 在網路上買了一台故障的PSP2000型(被裝在PSP3000的殼…) 故障狀況為：開機亮綠燈，但完全無畫面，推測是變磚了!! 所以就來研究一</description>
+    </item>
+    
     <item>
       <title>Sony PSP 金手指 CMF</title>
       <link>https://crrsn.github.io/blog/posts/f007-psp-cheat/</link>

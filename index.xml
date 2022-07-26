@@ -6,7 +6,16 @@
     <description>Recent content on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 15 Jun 2022 22:12:50 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jul 2022 20:00:00 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PSP解磚研究-PSP2000成功</title>
+      <link>https://crrsn.github.io/blog/posts/f022-psp-unbrick/</link>
+      <pubDate>Mon, 25 Jul 2022 20:00:00 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f022-psp-unbrick/</guid>
+      <description>前言 在網路上買了一台故障的PSP2000型(被裝在PSP3000的殼…) 故障狀況為：開機亮綠燈，但完全無畫面，推測是變磚了!! 所以就來研究一</description>
+    </item>
+    
     <item>
       <title>Game and Watch 刷機研究 - 換256MB晶片</title>
       <link>https://crrsn.github.io/blog/posts/f021-gnw-256mb-chip/</link>
