@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 工科男LEO&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 25 Jul 2022 20:00:00 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Sep 2022 20:59:47 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>F023 Fix 3_5mm Audio Jack</title>
+      <link>https://crrsn.github.io/blog/posts/f023-fix-3_5mm-audio-jack/</link>
+      <pubDate>Thu, 15 Sep 2022 20:59:47 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f023-fix-3_5mm-audio-jack/</guid>
+      <description>藍芽音箱面板 - 話筒插頭故障維修記錄 這個藍芽音箱面板的「話筒插頭」因使用者插太大力而整個掉進去了… 拆開後發現整個焊盤都掉了… 這下麻煩了!! 原本</description>
+    </item>
+    
     <item>
       <title>PSP解磚研究-PSP2000成功</title>
       <link>https://crrsn.github.io/blog/posts/f022-psp-unbrick/</link>
