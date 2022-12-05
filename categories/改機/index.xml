@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>改機 on 工科男LEO&#39;s Blog</title>
+    <link>https://crrsn.github.io/blog/categories/%E6%94%B9%E6%A9%9F/</link>
+    <description>Recent content in 改機 on 工科男LEO&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 04 Dec 2022 20:23:48 +0800</lastBuildDate><atom:link href="https://crrsn.github.io/blog/categories/%E6%94%B9%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nintendo GameCube 改機</title>
+      <link>https://crrsn.github.io/blog/posts/f025-gc-mods/</link>
+      <pubDate>Sun, 04 Dec 2022 20:23:48 +0800</pubDate>
+      
+      <guid>https://crrsn.github.io/blog/posts/f025-gc-mods/</guid>
+      <description>NGC 2022年最新、最便宜的改機方案 釋放 Nintendo GAMECUBE 的強大力量 感謝國外大神，2022年終於 Nintendo Gamecube 迎來了新的改機方案 Raspberry Pi Pico 是這個改機的核心硬體。Pico非</description>
+    </item>
+    
+  </channel>
+</rss>
